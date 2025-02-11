@@ -7,11 +7,11 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <None Remove="arquivo.dockerfile" />
+    <None Remove="Dockerfile" />
   </ItemGroup>
 
   <ItemGroup>
-    <Content Include="arquivo.dockerfile" />
+    <Content Include="Dockerfile" />
   </ItemGroup>
 
   <ItemGroup>
