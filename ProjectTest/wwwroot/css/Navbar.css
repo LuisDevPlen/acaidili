@@ -1,0 +1,116 @@
+﻿/* Estilos aprimorados para a Navbar com gradiente roxo e letra amarela */
+header {
+    background: linear-gradient(135deg, #8e44ad, #9b59b6); /* Gradiente de roxo suave */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra leve para dar profundidade */
+    padding: 20px 0; /* Espaçamento superior e inferior do header */
+}
+
+    header .navbar {
+        background-color: transparent; /* Navbar agora sem fundo, herda do header */
+        border-bottom: 4px solid #6a1b9a; /* Roxo escuro para a borda inferior */
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px 20px; /* Espaçamento dentro da navbar */
+    }
+
+        header .navbar .swiper-container {
+            width: 100%;
+            overflow: hidden; /* Esconde a parte excedente que não é visível */
+            position: relative; /* Para posicionar as setas nas extremidades */
+        }
+
+        header .navbar .swiper-wrapper {
+            display: flex;
+            flex-direction: row;
+        }
+
+        header .navbar .swiper-slide {
+            flex-shrink: 0; /* Impede que os itens encolham */
+            margin-right: 15px;
+        }
+
+        header .navbar .nav-link {
+            color: #f1c40f !important; /* Amarelo para os links */
+            font-weight: 500;
+            transition: color 0.3s ease-in-out;
+            padding: 10px;
+        }
+
+            header .navbar .nav-link:hover {
+                color: #ffffff !important; /* Branco no hover */
+                text-decoration: underline;
+            }
+
+/* Botões de navegação como setas, posicionadas para fora do swiper */
+.swiper-button-next, .swiper-button-prev {
+    font-size: 40px; /* Aumenta o tamanho da seta para maior visibilidade */
+    color: #ffffff; /* Cor branca para maior contraste */
+    background-color: #9b59b6; /* Fundo roxo para destacar */
+    border-radius: 50%; /* Borda arredondada para dar destaque */
+    padding: 20px; /* Aumenta o padding para uma área clicável maior */
+    cursor: pointer;
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute; /* Posicionamento absoluto */
+    top: 50%;
+    transform: translateY(-50%); /* Centra as setas na vertical */
+    z-index: 10; /* Garante que as setas fiquem acima do conteúdo */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2); /* Sombra mais forte para dar mais destaque */
+}
+
+/* Posicionando as setas fora do swiper */
+.swiper-button-next {
+    right: -60px; /* Ajusta para ficar fora da área do swiper */
+}
+
+.swiper-button-prev {
+    left: -60px; /* Ajusta para ficar fora da área do swiper */
+}
+
+/* Setas como ícones */
+.swiper-button-next:after {
+    content: '→'; /* Seta para o lado direito */
+    font-size: 30px; /* Tamanho maior para maior visibilidade */
+    color: #ffffff; /* A cor das setas */
+}
+
+.swiper-button-prev:after {
+    content: '←'; /* Seta para o lado esquerdo */
+    font-size: 30px; /* Tamanho maior para maior visibilidade */
+    color: #ffffff; /* A cor das setas */
+}
+
+/* Efeito hover para as setas */
+.swiper-button-next:hover, .swiper-button-prev:hover {
+    background-color: #6a1b9a; /* Fundo mais escuro ao passar o mouse */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Sombra mais forte para destacar mais */
+}
+
+/* Responsividade para dispositivos móveis */
+@media (max-width: 991px) {
+    header .navbar .swiper-container {
+        overflow-x: scroll; /* Permite rolar horizontalmente */
+        -webkit-overflow-scrolling: touch; /* Suaviza o rolar no iOS */
+    }
+
+    header .navbar .swiper-slide {
+        flex: 0 0 auto; /* Impede que os itens se ajustem e fiquem no mesmo tamanho */
+    }
+}
+
+/* Estilo para o link "Voltar ao Menu Inicial" */
+a.nav-link.text-dark.fw-medium {
+    color: #9b59b6 !important; /* Cor roxa para o texto */
+    font-weight: 500; /* Peso médio da fonte */
+    transition: color 0.3s ease-in-out; /* Transição suave para a cor */
+}
+
+    a.nav-link.text-dark.fw-medium:hover {
+        color: #6a1b9a !important; /* Cor roxa mais escura no hover */
+        text-decoration: underline; /* Sublinha o texto no hover */
+    }
+
+

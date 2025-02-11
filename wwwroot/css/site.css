@@ -1,0 +1,622 @@
+/* Estilos do Carrossel */
+.carousel-container {
+    margin: 20px 0;
+    position: relative;
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.carousel-item {
+    position: relative;
+    width: 100%;
+    transition: transform 0.6s ease-in-out;
+    height: auto;
+}
+
+    .carousel-item img {
+        width: 100%;
+        height: auto;
+        object-fit: cover;
+        border-radius: 10px;
+    }
+
+.carousel-caption {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    right: 20px;
+    background: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    padding: 10px;
+    border-radius: 5px;
+    text-align: center;
+}
+
+/* Estilos Gerais */
+body {
+    background-color: #f8f9fa;
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+.card {
+    transition: transform 0.2s;
+}
+
+    .card:hover {
+        transform: scale(1.05);
+    }
+
+.logo-img {
+    height: 50px;
+    width: auto;
+    margin-right: 10px;
+}
+
+.card {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border: none;
+}
+
+
+
+
+
+.logo-img {
+    height: 40px;
+    margin-right: 10px;
+}
+
+
+
+ 
+
+
+    .form-select:focus {
+        border-color: #388E3C;
+        outline: none;
+    }
+
+.navbar-toggler {
+    border-color: #4CAF50;
+}
+
+.navbar-toggler-icon {
+    background-color: #4CAF50;
+}
+
+html, body {
+    height: 100%;
+    margin: 0;
+}
+
+.footer {
+    background-color: #2E8B2A;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    margin-top: auto;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-info {
+    background-color: #f8f9fa;
+    text-align: center;
+    padding: 20px 0;
+    border-top: 2px solid #2E8B2A;
+    margin-top: 20px;
+}
+
+    .contact-info p {
+        margin: 0;
+        font-weight: bold;
+        font-size: 1.2em;
+        color: #2E8B2A;
+    }
+
+.social-links {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.social-link {
+    margin: 0 20px;
+    text-decoration: none;
+    color: #2E8B2A;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+    .social-link:hover {
+        color: #1f6b1e;
+    }
+
+.icon {
+    width: 30px;
+    height: 30px;
+    vertical-align: middle;
+    margin-right: 8px;
+}
+
+.menu-icon {
+    width: 40px;
+    height: auto;
+    display: block;
+    margin: 0 auto 5px;
+}
+
+.nav-tabs .nav-link {
+    color: black;
+    font-size: 14px;
+}
+
+.nav-tabs {
+    border-bottom: none;
+}
+
+/* Resetando alguns estilos padrões */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f8f8;
+    color: #333;
+    padding: 0;
+}
+
+header {
+    background-color: #f93;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+h1 {
+    font-size: 2.5rem;
+}
+
+.product-container {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    padding: 20px;
+}
+
+.product-card {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    margin: 15px;
+    text-align: center;
+    padding: 15px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+    .product-card:hover {
+        transform: scale(1.05);
+        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    }
+
+.product-image {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.product-card h2 {
+    font-size: 1.8rem;
+    margin-top: 15px;
+    color: #333;
+}
+
+.product-description {
+    font-size: 1rem;
+    color: #777;
+    margin-top: 10px;
+}
+
+.price {
+    font-size: 1.5rem;
+    color: #f93;
+    margin-top: 10px;
+}
+
+.order-button {
+    background-color: #f93;
+    color: white;
+    border: none;
+    padding: 12px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 15px;
+    font-size: 1rem;
+}
+
+    .order-button:hover {
+        background-color: #e68a00;
+    }
+
+/* Estilo do contêiner de introdução */
+.intro-container {
+    background: url('path/to/your-image.jpg') no-repeat center center;
+    background-size: cover;
+    border-radius: 15px;
+    padding: 60px 20px;
+    color: white;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    position: relative;
+}
+
+    .intro-container h2 {
+        font-size: 3rem;
+        text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.5);
+    }
+
+    .intro-container p {
+        font-size: 1.25rem;
+        line-height: 1.6;
+        text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.4);
+    }
+
+    .intro-container .btn {
+        font-size: 1.25rem;
+        padding: 12px 30px;
+        border-radius: 30px;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
+        transition: transform 0.3s ease, background-color 0.3s ease;
+    }
+
+        .intro-container .btn:hover {
+            transform: translateY(-5px);
+            background-color: #28a745;
+        }
+
+    .intro-container::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.4);
+        border-radius: 15px;
+        z-index: -1;
+    }
+
+/* Estilos para responsividade */
+@media (max-width: 768px) {
+    .carousel-caption {
+        font-size: 0.9rem;
+        bottom: 10px;
+    }
+
+    .intro-container h2 {
+        font-size: 2rem;
+    }
+
+    .product-card {
+        width: 100%;
+        margin: 10px 0;
+    }
+
+    .navbar-nav .nav-link {
+        padding: 8px 12px;
+    }
+
+    .social-links a {
+        font-size: 1.2em;
+    }
+
+    .footer {
+        padding: 10px 0;
+    }
+}
+
+@media (max-width: 480px) {
+    header h1 {
+        font-size: 1.8rem;
+    }
+
+    .navbar-nav .nav-link {
+        font-size: 0.9rem;
+    }
+
+    .contact-info p {
+        font-size: 1em;
+    }
+
+    .product-card h2 {
+        font-size: 1.5rem;
+    }
+
+    .order-button {
+        padding: 10px;
+        font-size: 0.9rem;
+    }
+}
+
+body {
+    background-image: url('/image/capa/capa.jpg');
+    background-size: cover; /* Faz a imagem cobrir todo o fundo da página */
+    background-position: center; /* Centraliza a imagem */
+    background-repeat: no-repeat; /* Impede a repetição da imagem */
+    height: 100%; /* Altere de 100vh para 100% para garantir que a altura do corpo seja total */
+    background-attachment: fixed; /* Fixação do fundo para que não se mova com o scroll */
+    margin: 0; /* Remove margens padrão do body */
+}
+
+
+/* Seção de Contato */
+.contact-info {
+    text-align: center; /* Centraliza o conteúdo */
+    padding: 40px 20px; /* Espaçamento interno (padding) para dar um bom espaçamento na área da seção */
+    background-color: #f8f8f8; /* Cor de fundo suave para a seção */
+    border-radius: 8px; /* Bordas arredondadas para uma aparência mais suave */
+}
+
+    /* Título da seção */
+    .contact-info h2 {
+        font-size: 2rem; /* Tamanho de fonte para o título */
+        color: #333; /* Cor escura para o título */
+        margin-bottom: 15px; /* Espaço abaixo do título */
+    }
+
+    /* Parágrafo abaixo do título */
+    .contact-info p {
+        font-size: 1.1rem; /* Tamanho de fonte para o texto */
+        color: #666; /* Cor mais clara para o texto */
+        margin-bottom: 30px; /* Espaço abaixo do parágrafo */
+    }
+
+/* Links das redes sociais */
+.social-links {
+    display: flex; /* Usa o modelo de layout flex para alinhar os itens lado a lado */
+    justify-content: center; /* Centraliza os itens horizontalmente */
+    gap: 20px; /* Espaço entre os links */
+    margin-bottom: 30px; /* Espaço abaixo dos links sociais */
+}
+
+/* Estilo para os links das redes sociais */
+.social-link {
+    display: flex; /* Exibe o ícone e o texto na mesma linha */
+    align-items: center; /* Alinha verticalmente os itens no centro */
+    color: #333; /* Cor do texto */
+    text-decoration: none; /* Remove a linha do link */
+    font-size: 1rem; /* Tamanho da fonte */
+    transition: color 0.3s ease; /* Adiciona uma transição suave ao passar o mouse */
+}
+
+    .social-link:hover {
+        color: #4CAF50; /* Muda a cor do texto ao passar o mouse */
+    }
+
+/* Estilo para os ícones das redes sociais */
+.icon {
+    width: 30px; /* Define o tamanho do ícone */
+    height: 30px; /* Define o tamanho do ícone */
+    margin-right: 10px; /* Espaço à direita do ícone */
+}
+
+/* Seção de botões */
+.contact-buttons {
+    display: flex; /* Exibe os botões lado a lado */
+    justify-content: center; /* Centraliza os botões horizontalmente */
+    gap: 20px; /* Espaço entre os botões */
+}
+
+/* Estilo para o botão */
+.btn {
+    padding: 12px 25px; /* Espaço interno para tornar o botão maior */
+    font-size: 1rem; /* Tamanho da fonte */
+    text-align: center; /* Alinha o texto no centro */
+    border-radius: 8px; /* Bordas arredondadas para os botões */
+    text-decoration: none; /* Remove a linha do link */
+    display: inline-block; /* Garante que o botão seja tratado como um bloco */
+    transition: background-color 0.3s ease; /* Transição suave para a cor de fundo */
+}
+
+/* Estilo para o botão de Instagram */
+.btn-primary {
+    background-color: #e4405f; /* Cor do botão para o Instagram */
+    color: white; /* Cor do texto */
+}
+
+    .btn-primary:hover {
+        background-color: #c13584; /* Cor do botão ao passar o mouse */
+    }
+
+/* Estilo para o botão de WhatsApp */
+.btn-success {
+    background-color: #25d366; /* Cor do botão para o WhatsApp */
+    color: white; /* Cor do texto */
+}
+
+    .btn-success:hover {
+        background-color: #128c7e; /* Cor do botão ao passar o mouse */
+    }
+
+/* Responsividade - Ajustes para dispositivos menores */
+@media (max-width: 768px) {
+    .social-links {
+        flex-direction: column; /* Alinha os links de redes sociais verticalmente em telas pequenas */
+        gap: 10px; /* Diminui o espaço entre os links */
+    }
+
+    .contact-buttons {
+        flex-direction: column; /* Alinha os botões verticalmente em telas pequenas */
+        gap: 10px; /* Diminui o espaço entre os botões */
+    }
+}
+
+
+/* Container geral que engloba todas as opções */
+.cta-container-wrapper {
+    display: flex; /* Usamos Flexbox para organizar os itens lado a lado */
+    justify-content: space-between; /* Espaço entre os itens */
+    gap: 20px; /* Espaço entre os itens, ajustável conforme necessário */
+    flex-wrap: wrap; /* Permite que os itens quebrem linha em telas pequenas */
+    margin: 0 auto; /* Centraliza o container no meio da tela */
+    max-width: 1200px; /* Limita a largura do container */
+    padding: 20px; /* Espaçamento interno do container */
+}
+
+/* Cada caixa individual de CTA */
+.cta-container {
+    display: flex; /* Organiza o conteúdo de cada opção em linha */
+    flex: 1 1 300px; /* Assegura que as caixas ocupem pelo menos 300px, mas podem crescer */
+    flex-direction: column; /* Alinha o conteúdo de cima para baixo */
+    border: 1px solid #ddd; /* Adiciona uma borda suave para separar as caixas */
+    border-radius: 10px; /* Borda arredondada */
+    overflow: hidden; /* Garante que a imagem não ultrapasse o limite da borda */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Sombras suaves para dar profundidade */
+    transition: transform 0.3s ease-in-out; /* Transição suave para efeitos de hover */
+}
+
+    /* Efeito de hover para aumentar a caixa */
+    .cta-container:hover {
+        transform: translateY(-5px); /* Levanta ligeiramente a caixa ao passar o mouse */
+    }
+
+    /* Estilo da imagem dentro de cada opção */
+    .cta-container img {
+        width: 100%; /* A imagem ocupa 100% da largura disponível */
+        height: auto; /* Mantém a proporção da imagem */
+        object-fit: cover; /* Cobre o espaço da imagem sem distorcer */
+    }
+
+/* Estilo da parte de texto dentro da caixa */
+.cta-box {
+    padding: 20px; /* Adiciona espaçamento ao redor do conteúdo de texto */
+    text-align: center; /* Centraliza o texto */
+}
+
+    /* Título da seção */
+    .cta-box h3 {
+        font-size: 1.5rem; /* Tamanho do título */
+        margin-bottom: 10px; /* Espaço abaixo do título */
+        color: #333; /* Cor do texto */
+        font-weight: bold; /* Deixa o título em negrito */
+    }
+
+    /* Parágrafo de descrição */
+    .cta-box p {
+        font-size: 1rem; /* Tamanho da fonte para a descrição */
+        color: #666; /* Cor de texto mais suave */
+        margin-bottom: 20px; /* Espaço abaixo do parágrafo */
+    }
+
+/* Estilo do botão CTA */
+.cta-button {
+    display: inline-block; /* Faz o botão se comportar como um link, mas com estilo */
+    padding: 12px 20px; /* Espaçamento interno do botão */
+    background-color: #007BFF; /* Cor de fundo padrão */
+    color: white; /* Cor do texto */
+    text-decoration: none; /* Remove sublinhado do link */
+    border-radius: 5px; /* Bordas arredondadas */
+    font-weight: bold; /* Texto em negrito */
+    transition: background-color 0.3s ease-in-out; /* Transição suave para a mudança de cor */
+}
+
+    .cta-button:hover {
+        background-color: #0056b3; /* Muda a cor quando o botão é hoverizado */
+    }
+
+/* Cores específicas para botões */
+.cta-cta-orange {
+    background-color: #FFA500; /* Cor laranja para botões específicos */
+}
+
+    .cta-cta-orange:hover {
+        background-color: #cc8400; /* Cor de hover para o botão laranja */
+    }
+
+.cta-cta-green {
+    background-color: #28a745; /* Cor verde para botões específicos */
+}
+
+    .cta-cta-green:hover {
+        background-color: #1e7e34; /* Cor de hover para o botão verde */
+    }
+
+/* Estilo para a nav-bar dentro do container mt-5 */
+.container.mt-5 .nav-link {
+    color: #ffeb3b !important; /* Texto amarelo */
+    background: linear-gradient(45deg, #9c4dcc, #6a1b9a); /* Gradiente roxo */
+    font-weight: 600; /* Fonte mais grossa para maior impacto */
+    border: 2px solid #ffffff; /* Borda branca em volta de cada item */
+    border-radius: 5px; /* Bordas arredondadas */
+    padding: 10px 20px; /* Aumenta o padding para dar mais espaço ao texto */
+    text-transform: uppercase; /* Transforma o texto para maiúsculas */
+    letter-spacing: 1px; /* Espaçamento maior entre as letras */
+    transition: all 0.3s ease; /* Transição suave para todos os efeitos */
+    margin: 0 15px; /* Margem de 15px ao redor de cada item de navegação para dar mais espaçamento entre eles */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Sombra sutil para um efeito de profundidade */
+}
+
+/* Estilo para a nav-bar dentro do container mt-5 */
+.container.mt-5 .nav-link {
+    color: #ffeb3b !important; /* Texto amarelo */
+    background: linear-gradient(45deg, #9c4dcc, #6a1b9a); /* Gradiente roxo */
+    font-weight: 600; /* Fonte mais grossa para maior impacto */
+    border: 2px solid #ffffff; /* Borda branca em volta de cada item */
+    border-radius: 5px; /* Bordas arredondadas */
+    padding: 10px 20px; /* Aumenta o padding para dar mais espaço ao texto */
+    text-transform: uppercase; /* Transforma o texto para maiúsculas */
+    letter-spacing: 1px; /* Espaçamento maior entre as letras */
+    transition: all 0.3s ease; /* Transição suave para todos os efeitos */
+    margin: 10px 15px; /* Margem vertical de 10px para espaçamento entre as linhas */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Sombra sutil para um efeito de profundidade */
+}
+
+    /* Estilo para a nav-link ao passar o mouse dentro do container mt-5 */
+    .container.mt-5 .nav-link:hover {
+        background: linear-gradient(45deg, #7b1fa2, #9c27b0); /* Gradiente roxo mais claro ao passar o mouse */
+        color: #ffeb3b; /* Texto amarelo */
+        border-color: #ffffff; /* Borda branca ao passar o mouse */
+        box-shadow: 0 4px 8px rgba(255, 255, 255, 0.2); /* Sombra mais forte ao passar o mouse */
+        transform: scale(1.05); /* Aumenta ligeiramente o tamanho do item ao passar o mouse */
+    }
+
+/* Estilo para a aba ativa dentro do container mt-5 */
+.container.mt-5 .nav-item .nav-link.active {
+    background: linear-gradient(45deg, #9c4dcc, #6a1b9a); /* Gradiente roxo */
+    color: #ffeb3b; /* Texto amarelo no item ativo */
+    border-color: #ffffff; /* Borda branca no item ativo */
+    box-shadow: 0 4px 8px rgba(255, 255, 255, 0.3); /* Sombra mais forte no item ativo */
+}
+
+/* Estilo para a barra de navegação dentro do container mt-5 */
+.container.mt-5 .nav-tabs {
+    border-bottom: 3px solid #ffffff; /* Linha inferior branca */
+}
+
+/* Responsividade - Estilo para dispositivos móveis */
+@media (max-width: 768px) {
+    .container.mt-5 .nav-link {
+        padding: 8px 16px; /* Menos padding em telas pequenas */
+        font-size: 14px; /* Fonte um pouco menor para telas menores */
+        margin: 8px 10px; /* Ajuste a margem para 8px de espaçamento vertical */
+    }
+
+        .container.mt-5 .nav-link:hover {
+            transform: scale(1.1); /* Aumenta mais o item ao passar o mouse em telas menores */
+        }
+}
+

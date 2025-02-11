@@ -1,0 +1,68 @@
+.adicional-card {
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    background-color: #f9f9f9;
+    transition: transform 0.2s ease;
+    min-height: 180px; /* Defina uma altura mínima para alinhar */
+}
+
+.adicional-item {
+    font-weight: bold;
+    color: #333;
+    min-height: 40px; /* Define uma altura mínima para o texto */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.adicional-preco {
+    font-size: 1.2em;
+    color: #4CAF50;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+.campo-adicionais {
+    margin: 20px;
+    text-align: center; /* Centraliza o link */
+}
+
+.link-adicionais {
+    display: inline-block;
+    padding: 15px 30px; /* Aumenta o padding */
+    background-color: #4CAF50; /* Cor verde */
+    color: white;
+    text-decoration: none;
+    border-radius: 30px; /* Bordas mais arredondadas */
+    font-size: 18px; /* Aumenta o tamanho da fonte */
+    font-weight: bold; /* Deixa o texto em negrito */
+    transition: background-color 0.3s, transform 0.3s; /* Adiciona transição ao hover */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra ao redor do botão */
+}
+
+    .link-adicionais:hover {
+        background-color: #45a049; /* Cor verde mais escura ao passar o mouse */
+        transform: translateY(-2px); /* Efeito de levantar ao passar o mouse */
+    }
+
+select.form-control {
+    appearance: none; /* Remove o estilo padrão */
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    background-color: white;
+    border: 1px solid #ccc;
+    padding: 10px;
+    font-size: 16px;
+    width: 100%;
+    border-radius: 5px;
+    cursor: pointer;
+    background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24"><path fill="%23000000" d="M7 10l5 5 5-5z"/></svg>');
+    background-repeat: no-repeat;
+    background-position: right 10px center;
+    background-size: 20px;
+}
+

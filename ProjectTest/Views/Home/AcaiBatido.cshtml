@@ -1,0 +1,150 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="pt-BR">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <title>Lista de Produtos</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/css/Acai.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/css/Navbar.css">
+    <link rel="stylesheet" href="~/css/comboBox.css">
+    <link rel="stylesheet" href="~/css/Titulos.css">
+    <link rel="stylesheet" href="~/css/espacamento.css">
+    <link rel="stylesheet" href="~/css/pedidoWhats.css">
+ 
+</head>
+<body>
+    <div class="container">
+        <img src="/image/whatsapp-icon.png" alt="WhatsApp" class="whatsapp-icon">
+        <span class="whatsapp-text">WhatsApp</span>
+
+        <p class="description">Já escolheu seu pedido? 🍓 Clique no link abaixo e faça seu pedido agora pelo WhatsApp! 📲👇</p>
+        <a href="https://wa.me/5534997994865" class="order-button">FAZER PEDIDO AGORA</a>
+    </div>
+
+    <div class="container mt-5">
+        <h2 id="acai-title" class="text-center mb-4">Açai batido</h2>
+        <div class="row">
+            <!-- Card 1 -->
+            <div class="col-md-4">
+                <div class="card mb-4" style="height: 100%;">
+                    <img src="/image/Combos/acaiBatido.png" class="card-img-top" alt="Açaí Médio" />
+                    <div class="card-body d-flex flex-column">
+                        <h5 class="card-title">Açaí batido com fruta</h5>
+                        <p class="card-text"></p>
+                        <p class="card-text"><strong>Adicionais disponíveis:</strong></p>
+                        <select id="adicionais" name="adicionais" class="form-control">
+                            <option value="" disabled selected>Selecione um adicional</option>
+                            <option value="amendoim">Banana</option>
+                            <option value="aveia">Morango</option>
+                            <option value="banana">Cupuaçu</option>
+                          
+
+                        </select>
+                      
+                        <br />
+                        <p class="card-text"><strong>Preço: R$ 19,50</strong></p>
+                      
+
+                        <div class="mt-auto">
+                            <!-- Botão para abrir a modal -->
+                            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#CocazeroModal">Ver Mais</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Modal -->
+            <div class="modal fade" id="CocazeroModal" tabindex="-1" aria-labelledby="acaiModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="acaiModalLabel">Açaí batido com fruta</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <img src="/image/Combos/acaiBatido.png" class="img-fluid mb-3" alt="Açaí Médio" />
+                            <p>
+                                Sem glúten | Sem lactose | Açaí com baixo teor de açúcar na fabricação |
+                            </p>
+
+                          
+                            <p><strong>Preço: R$ 19,50</strong></p>
+
+
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <!-- Card 2 -->
+            <div class="col-md-4">
+                <div class="card mb-4" style="height: 100%;">
+                    <img src="/image/Combos/acaiBatido.png" class="card-img-top" alt="Açaí Médio" />
+                    <div class="card-body d-flex flex-column">
+                        <h5 class="card-title">Tribomba</h5>
+                        <p class="card-text"></p>
+                        <p class="card-text"><strong>Adicionais disponíveis:</strong></p>
+                        <select id="adicionais" name="adicionais" class="form-control">
+                            <option value="" disabled selected>Selecione um adicional</option>
+                            <option value="amendoim">Creme Ninho fit delight - R$ 5,00</option>
+                            <option value="aveia">Brigadeiro Delight - R$ 6,00</option>
+                            <option value="banana">Whey de chocolate(Growth) zero( (lactose, açucar e glúten) - R$ 8,50</option>
+                            <option value="brigadeiro_fit">Whey de morango(Growth) zero(lactose, açucar e glúten) - R$ 8,50</option>
+                        
+                        </select>
+                        <br/>
+                        <p class="card-text"><strong>Preço: R$ 23,80</strong></p>
+                        <div class="mt-auto">
+                            <!-- Botão para abrir a modal -->
+                            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#tri">Ver Mais</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Modal -->
+            <div class="modal fade" id="tri" tabindex="-1" aria-labelledby="acaiModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="acaiModalLabel">Tribomba</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <img src="/image/Combos/acaiBatido.png" class="img-fluid mb-3" alt="Açaí Médio" />
+                            <p>
+                                Este deleite tropical combina o toque exótico do cupuaçu com o vigor rejuvenescedor do açaí, resultando em uma garrafa de 500ml repleta de sabor e saúde. Neste blend, o mel fornece uma doçura suave, complementada pela pasta de amendoim e a banana. Para adicionar ainda mais complexidade, incorporamos o Guaraná em pó, o leite em pó zero e o cacau em pó, trazendo um ligeiro toque de amargura. Por fim, a granola e a castanha adicionam uma agradável crocância, criando uma experiência multissensorial. Uma sinfonia tropical para o seu paladar!
+                                Sem glúten | Sem lactose |Açaí com baixo teor de açúcar na fabricação|
+                            </p>
+                            <p><strong>Preço: R$ 23,80</strong></p>
+
+
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+
+          
+
+        </div>
+    </div>
+
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

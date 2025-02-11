@@ -1,0 +1,21 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="arquivo.dockerfile" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="arquivo.dockerfile" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.NET.Runtime.WebAssembly.Sdk" Version="8.0.8" />
+  </ItemGroup>
+
+</Project>

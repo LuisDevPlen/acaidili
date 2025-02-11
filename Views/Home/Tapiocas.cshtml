@@ -1,0 +1,356 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="pt-BR">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <title>Lista de Produtos</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/css/Navbar.css">
+    <link rel="stylesheet" href="~/css/Titulos.css">
+    <link rel="stylesheet" href="~/css/espacamento.css">
+    <link rel="stylesheet" href="~/css/pedidoWhats.css">
+ 
+</head>
+<body>
+
+    <div class="container">
+        <img src="/image/whatsapp-icon.png" alt="WhatsApp" class="whatsapp-icon">
+        <span class="whatsapp-text">WhatsApp</span>
+
+        <p class="description">Já escolheu seu pedido? 🍓 Clique no link abaixo e faça seu pedido agora pelo WhatsApp! 📲👇</p>
+        <a href="https://wa.me/5534997994865" class="order-button">FAZER PEDIDO AGORA</a>
+    </div>
+
+    <div class="container mt-5">
+        <h2 id="acai-title" class="text-center mb-4">Tapiocas</h2>
+        <div class="row">
+            <!-- Card 1 -->
+            <div class="col-md-4">
+                <div class="card mb-4" style="height: 100%;">
+                    <img src="/image/Tapioca/OvosCremososBacon.jpg" class="card-img-top" alt="Açaí Médio" />
+                    <div class="card-body d-flex flex-column">
+                        <h5 class="card-title">Ovos cremosos com bacon</h5>
+                        <br />
+                        <br />
+                        <p class="card-text"></p>
+                        <p class="card-text"><strong>Preço: R$ 27,00</strong></p>
+                        <div class="mt-auto">
+                            <!-- Botão para abrir a modal -->
+                            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#CocazeroModal">Ver Mais</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Modal -->
+            <div class="modal fade" id="CocazeroModal" tabindex="-1" aria-labelledby="acaiModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="acaiModalLabel">Ovos cremosos com bacon</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <img src="/image/Tapioca/OvosCremososBacon.jpg" class="img-fluid mb-3" alt="Açaí Médio" />
+                            <p>
+                                A tapioca Ovos Cremosos com Bacon é uma combinação deliciosa e reconfortante, com ovos preparados de forma suave e cremosa, acompanhados de pedaços crocantes de bacon. Uma opção perfeita para quem busca sabor e energia em cada mordida!
+                            </p>
+                            <p><strong>Preço: R$ 27,00</strong></p>
+
+
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <!-- Card 2 -->
+            <div class="col-md-4">
+                <div class="card mb-4" style="height: 100%;">
+                    <img src="/image/Tapioca/PeitoDePeru.jpg" class="card-img-top" alt="Açaí Grande" />
+                    <div class="card-body d-flex flex-column">
+                        <h5 class="card-title">Peito de peru. (Imagem Ilustrativa)</h5>
+                        <p class="card-text">.</p>
+                        <p class="card-text"><strong>Preço: R$ 29,90</strong></p>
+                        <div class="mt-auto">
+                            <!-- Botão para abrir a modal -->
+                            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#CocaModal">Ver Mais</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Modal -->
+            <div class="modal fade" id="CocaModal" tabindex="-1" aria-labelledby="acaiModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="acaiModalLabel">Peito de peru. (Imagem Ilustrativa)</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <img src="/image/Tapioca/PeitoDePeru.jpg" class="img-fluid mb-3" alt="Açaí Médio" />
+                            <p>
+                                A tapioca de peito de peru é uma opção saborosa e leve, com fatias finas de peito de peru, delicadamente envolvidas na textura macia da tapioca. Ideal para quem busca um prato rápido, nutritivo e repleto de sabor, perfeito para qualquer momento do dia.
+                            </p>
+                            <p><strong>Preço: R$ 29,90</strong></p>
+
+
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+                         
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <!-- Card 3 -->
+            <div class="col-md-4">
+                <div class="card mb-4" style="height: 100%;">
+                    <img src="/image/Tapioca/PernilAoMolhoHolandes.jpg" class="card-img-top" alt="Açaí Grande" />
+                    <div class="card-body d-flex flex-column">
+                        <h5 class="card-title">Pernil com molho (Imagem Ilustrativa)</h5>
+                        <p class="card-text">.</p>
+                        <p class="card-text"><strong>Preço: R$ 29,90</strong></p>
+                        <div class="mt-auto">
+                            <!-- Botão para abrir a modal -->
+                            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#pernil">Ver Mais</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Modal -->
+            <div class="modal fade" id="pernil" tabindex="-1" aria-labelledby="acaiModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="acaiModalLabel">Pernil com molho (Imagem Ilustrativa)</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <img src="/image/Tapioca/PernilAoMolhoHolandes.jpg" class="img-fluid mb-3" alt="Açaí Médio" />
+                            <p>
+                                Delicie-se com nosso Pernil com Molho Holandês, uma opção inovadora  O prato traduz uma harmonia perfeita entre o suculento pernil levemente triturado e o frescor do tomate cereja. O queijo mussarela acrescenta uma delicadeza, enquanto a farofa de bacon confere uma textura crocante irresistível. Para completar, o molho holandês proporciona um toque de requinte e a salsinha desidratada adiciona uma nota aromática. Uma experiência culinária inesquecível!
+                                Para preservar a crocância da massa, o molho é servido separadamente. Sugerimos delicadamente abrir a embalagem e adicionar o molho por cima do pernil, conforme seu gosto.
+                                | Sem glúten | Sem lactose | Sem açúcar | Sem conservantes | Temperos naturais |
+                            
+                            </p>
+                            <p><strong>Preço: R$ 29,90</strong></p>
+
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Espaçamento a cada 3 cards -->
+            <div class="row mb-4"></div> <!-- Adiciona um espaço abaixo dos primeiros três cards -->
+
+            <!-- Card 4 -->
+            <div class="col-md-4">
+                <div class="card mb-4" style="height: 100%;">
+                    <img src="/image/Tapioca/Pizza.jpg" class="card-img-top" alt="Açaí Grande" />
+                    <div class="card-body d-flex flex-column">
+                        <h5 class="card-title">Pizza (Imagem Ilustrativa)</h5>
+                        <p class="card-text">.</p>
+                        <p class="card-text"><strong>Preço: R$ 27,90</strong></p>
+                        <div class="mt-auto">
+                            <!-- Botão para abrir a modal -->
+                            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#pizza">Ver Mais</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Modal -->
+            <div class="modal fade" id="pizza" tabindex="-1" aria-labelledby="acaiModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="acaiModalLabel">Pizza (Imagem Ilustrativa)</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <img src="/image/Tapioca/Pizza.jpg" class="img-fluid mb-3" alt="Açaí Médio" />
+                            <p>
+                                A tapioca de pizza é uma explosão de sabores, trazendo o clássico gostinho da pizza em uma versão leve e sem glúten e lactose. Com uma combinação irresistível de queijo derretido, molho de tomate temperado e toques especiais de orégano, é perfeita para quem ama praticidade sem abrir mão do sabor.
+                            </p>
+                            <p><strong>Preço: R$ 27,90</strong></p>
+
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+            <!-- Card 5 -->
+            <div class="col-md-4">
+                <div class="card mb-4" style="height: 100%;">
+                    <img src="/image/Tapioca/capreseatt.png" class="card-img-top" alt="Açaí Grande" />
+                    <div class="card-body d-flex flex-column">
+                        <h5 class="card-title">Caprese</h5>
+                        <p class="card-text">.</p>
+                        <p class="card-text"><strong>Preço: R$ 29,50</strong></p>
+                        <div class="mt-auto">
+                            <!-- Botão para abrir a modal -->
+                            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#caprese">Ver Mais</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Modal -->
+            <div class="modal fade" id="caprese" tabindex="-1" aria-labelledby="acaiModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="acaiModalLabel">Caprese</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <img src="/image/Tapioca/capreseatt.png" class="img-fluid mb-3" alt="Açaí Médio" />
+                            <p>
+                                Esta delícia é preparada com uma massa verde natural, sem corantes. A mistura de queijo minas frescal e queijo de búfala proporciona uma experiência cremosa incomparável. O tomate cereja acrescenta um toque doce e saboroso, enquanto as folhas de manjericão frescas trazem a sensação de frescor ao paladar. O molho pesto, rico e aromático, e a salsinha desidratada adicionam um acabamento perfeito a esta obra-prima culinária. Desfrute desta experiência única e saborosa.
+                                | Sem glúten | Sem lactose | Sem açúcar | Sem conservantes | Temperos naturais | Vegetariano |
+                            </p>
+                            <p><strong>Preço: R$ 29,50</strong></p>
+
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <!-- Card 6 -->
+            <div class="col-md-4">
+                <div class="card mb-4" style="height: 100%;">
+                    <img src="/image/Tapioca/FrangoBaconQueijo.jpg" class="card-img-top" alt="Açaí Grande" />
+                    <div class="card-body d-flex flex-column">
+                        <h5 class="card-title">Frango, bacon e queijo (Imagem Ilustrativa)).</h5>
+                        <p class="card-text">.</p>
+                        <p class="card-text"><strong>Preço: R$ 29,90</strong></p>
+                        <div class="mt-auto">
+                            <!-- Botão para abrir a modal -->
+                            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#FrangoBaconQueijo">Ver Mais</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Modal -->
+            <div class="modal fade" id="FrangoBaconQueijo" tabindex="-1" aria-labelledby="acaiModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="acaiModalLabel">Frango, bacon e queijo. (Imagem Ilustrativa)</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <img src="/image/Tapioca/FrangoBaconQueijo.jpg" class="img-fluid mb-3" alt="Açaí Médio" />
+                            <p>
+                                Esta obra-prima gastronômica é cuidadosamente preparada com suculento frango desfiado, crocante bacon, e um generoso recheio de queijo muçarela, criando uma combinação irresistível. Para aprimorar ainda mais o sabor, adicionamos uma pitada de orégano fresco e pimenta calabresa. A união perfeita desses ingredientes resulta em uma explosão de sabores autênticos e deliciosos. Experimente essa maravilha e deleite-se com cada mordida!
+                                | Sem glúten | Sem lactose | Sem açúcar | Sem conservantes | Temperos naturais |
+                            </p>
+                            <p><strong>Preço: R$ 29,90</strong></p>
+
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+          
+
+            <!-- Espaçamento a cada 3 cards -->
+            <div class="row mb-4"></div> <!-- Adiciona um espaço abaixo dos primeiros três cards -->
+
+        
+            <!-- Card 8 -->
+            <div class="col-md-4">
+                <div class="card mb-4" style="height: 100%;">
+                    <img src="/image/Tapioca/ChickenCheedar.jpg" class="card-img-top" alt="Açaí Grande" />
+                    <div class="card-body d-flex flex-column">
+                        <h5 class="card-title">Chicken cheddar. (Imagem Ilustrativa).</h5>
+                        <p class="card-text">.</p>
+                        <p class="card-text"><strong>Preço: R$ 28,00</strong></p>
+                        <div class="mt-auto">
+                            <!-- Botão para abrir a modal -->
+                            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#chicCheedar">Ver Mais</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Espaçamento a cada 3 cards -->
+            <div class="row mb-4"></div> <!-- Adiciona um espaço abaixo dos primeiros três cards -->
+
+            <!-- Modal -->
+            <div class="modal fade" id="chicCheedar" tabindex="-1" aria-labelledby="acaiModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="acaiModalLabel">Chicken cheddar. (Imagem Ilustrativa).</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <img src="/image/Tapioca/ChickenCheedar.jpg" class="img-fluid mb-3" alt="Açaí Médio" />
+                            <p>
+                                Deliciosamente recheada, nossa tapioca 'Chicken Cheddar' é uma combinação gastronômica irresistível. Apresenta o sabor autêntico e suculento do frango, que se harmoniza perfeitamente com o queijo e requeijão cheddar Polenghi, conhecido por sua textura cremosa e sabor marcante. A adição de bacon crocante fornece uma textura extra e uma profundidade de sabor inigualável. Para finalizar, uma pitada de orégano e salsinha desidratada acrescenta um toque fresco e aromático ao prato. Uma verdadeira delícia para o seu paladar!
+                                Sem glúten | Cheddar contém lactose | Sem açúcar | Temperos naturais |
+                            </p>
+                            <p><strong>Preço: R$ 28,00</strong></p>
+
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+
+
+
+
+
+
+
+            
+
+          
+
+
+        </div>
+    </div>
+
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

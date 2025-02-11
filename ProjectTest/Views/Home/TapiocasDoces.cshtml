@@ -1,0 +1,302 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="pt-BR">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <title>Lista de Produtos</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/css/Navbar.css">
+    <link rel="stylesheet" href="~/css/Acai.css">
+    <link rel="stylesheet" href="~/css/comboBox.css">
+    <link rel="stylesheet" href="~/css/Titulos.css">
+    <link rel="stylesheet" href="~/css/espacamento.css">
+    <link rel="stylesheet" href="~/css/pedidoWhats.css">
+ 
+</head>
+<body>
+
+    <div class="container">
+        <img src="/image/whatsapp-icon.png" alt="WhatsApp" class="whatsapp-icon">
+        <span class="whatsapp-text">WhatsApp</span>
+
+        <p class="description">Já escolheu seu pedido? 🍓 Clique no link abaixo e faça seu pedido agora pelo WhatsApp! 📲👇</p>
+        <a href="https://wa.me/5534997994865" class="order-button">FAZER PEDIDO AGORA</a>
+    </div>
+
+    <div class="container mt-5">
+        <h2 id="acai-title" class="text-center mb-4">Tapiocas doce</h2>
+        <div class="row">
+            <!-- Card 1 -->
+            <div class="col-md-4">
+                <div class="card mb-4" style="height: 100%;">
+                    <img src="/image/Tapioca/Sensacao.png" class="card-img-top" alt="Açaí Médio" />
+                    <div class="card-body d-flex flex-column">
+                        <h5 class="card-title">Sensação Delight</h5>
+                        <p class="card-text"></p>
+                        <br />
+
+                        <p class="card-text"><strong>Opções:</strong></p>
+                        <select id="adicionais" name="adicionais" class="form-control">
+                            <option value="" disabled selected>Selecione um adicional</option>
+                            <option value="amendoim">Nutella - R$ 7,00</option>
+                            <option value="creme_avelã">Creme de avelã - R$ 5,00</option>
+                            <option value="brigadeiro">Brigadeiro Chocofit Delight | Sem glúten | Sem Lactose | Sem Açúcar - R$ 6,00</option>
+                        </select>
+
+
+
+                        <br />
+                        <p class="card-text"><strong>Preço: R$ 21,90</strong></p>
+                        <div class="mt-auto">
+                            <!-- Botão para abrir a modal -->
+                            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#sensacao">Ver Mais</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Modal -->
+            <div class="modal fade" id="sensacao" tabindex="-1" aria-labelledby="acaiModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="acaiModalLabel">Sensação Delight</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <img src="/image/Tapioca/Sensacao.png" class="img-fluid mb-3" alt="Açaí Médio" />
+                            <p>
+                                Descubra a sensação de um Fit perfeito, este prato é cuidadosamente recheado com nosso exclusivo brigadeiro delight, de sabor intenso e deliciosamente adocicado, Para finalizar, adicionamos uma generosa porção de morangos frescos e suculentos, trazendo um toque de acidez que equilibra o doce do brigadeiro. Essa combinação resulta em uma experiência gastronômica única, rica em texturas e sabores que irão surpreender seu paladar.
+                                Sem glúten | Sem lactose | Sem açúcar | Sem conservantes |
+                            </p>
+                            <p><strong>Preço: R$ 21,90</strong></p>
+
+
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <!-- Card 2 -->
+            <div class="col-md-4">
+                <div class="card mb-4" style="height: 100%;">
+                    <img src="/image/Tapioca/TortoneDeBanana.jpg" class="card-img-top" alt="Açaí Grande" />
+                    <div class="card-body d-flex flex-column">
+                        <h6 class="card-title">Tortone de banana Delight. (Imagem Ilustrativa)</h6>
+                        <p class="card-text">.</p>
+                        <p class="card-text"><strong>Opções:</strong></p>
+                        <select id="adicionais" name="adicionais" class="form-control">
+                            <option value="" disabled selected>Selecione um adicional</option>
+                            <option value="amendoim">Nutella - R$ 7,00</option>
+                            <option value="creme_avelã">Creme de avelã - R$ 5,00</option>
+                            <option value="brigadeiro">Brigadeiro Chocofit Delight | Sem glúten | Sem Lactose | Sem Açúcar - R$ 6,00</option>
+                        </select>
+                        <br />
+                        <p class="card-text"><strong>Preço: R$ 20,90</strong></p>
+                        <div class="mt-auto">
+                            <!-- Botão para abrir a modal -->
+                            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#CocaModal">Ver Mais</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Modal -->
+            <div class="modal fade" id="CocaModal" tabindex="-1" aria-labelledby="acaiModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="acaiModalLabel">Tortone de banana Delight. (Imagem Ilustrativa)</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <img src="/image/Tapioca/TortoneDeBanana.jpg" class="img-fluid mb-3" alt="Açaí Médio" />
+                            <p>
+                                Este prato de dar água na boca apresenta a combinação harmoniosa de queijo muçarela, banana cuidadosamente caramelizada com néctar de mel, canela e um irresistível brigadeiro Delight. Essa mistura de sabor e saúde é ideal para quem busca uma opção doce e ao mesmo tempo equilibrada. Experimente e encante-se!
+                                Sem glúten | Sem lactose | Sem açúcar | Sem conservantes |
+                            </p>
+                            <p><strong>Preço: R$ 20,90</strong></p>
+
+
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+                         
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <!-- Card 3 -->
+            <div class="col-md-4">
+                <div class="card mb-4" style="height: 100%;">
+                    <img src="/image/Tapioca/moraninhoo.png" class="card-img-top" alt="Açaí Grande" />
+                    <div class="card-body d-flex flex-column">
+                        <h5 class="card-title">Moraninho. (Imagem Ilustrativa)</h5>
+                        <p class="card-text">.</p>
+                        <p class="card-text"><strong>Opções:</strong></p>
+                        <select id="adicionais" name="adicionais" class="form-control">
+                            <option value="" disabled selected>Selecione um adicional</option>
+                            <option value="aveia">Creme ninho tradicional - R$ 4,00</option>
+                            <option value="aveia">Creme ninho fit |Sem glúten | Sem Lactose | sem Açúcar - R$ 5,00</option>
+
+                        </select>
+                        <br />
+                        <p class="card-text"><strong>Preço: R$ 24,00</strong></p>
+                        <div class="mt-auto">
+                            <!-- Botão para abrir a modal -->
+                            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#moran">Ver Mais</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Modal -->
+            <div class="modal fade" id="moran" tabindex="-1" aria-labelledby="acaiModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="acaiModalLabel">Moraninho. (Imagem Ilustrativa)</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <img src="/image/Tapioca/moraninhoo.png" class="img-fluid mb-3" alt="Açaí Médio" />
+                            <p>
+                                Desfrute do nosso 'Moraninho Delight', Este prato é um verdadeiro deleite para o paladar, com seu delicioso creme Ninho fit Delight, que proporciona uma textura cremosa e um sabor suave e envolvente. Acrescentamos a esta maravilha, morangos frescos e suculentos, que trazem um toque de acidez e doçura ao mesmo tempo. É uma combinação perfeita e equilibrada de sabores que prometem deixar sua refeição mais agradável e saudável. Experimente e se apaixone por essa opção fit!
+                                Sem glúten | Sem lactose | Sem açúcar | Sem conservantes |
+                            </p>
+                            <p><strong>Preço: R$ 29,90</strong></p>
+
+
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Espaçamento a cada 3 cards -->
+            <div class="row mb-4"></div> <!-- Adiciona um espaço abaixo dos primeiros três cards -->
+
+            <!-- Card 4 -->
+            <div class="col-md-4">
+                <div class="card mb-4" style="height: 100%;">
+                    <img src="/image/Tapioca/banana.jpg" class="card-img-top" alt="Açaí Grande" />
+                    <div class="card-body d-flex flex-column">
+                        <h5 class="card-title">Banana Delight. (Imagem Ilustrativa)</h5>
+                        <p class="card-text">.</p>
+
+                        <p class="card-text"><strong>Preço: R$ 28,50</strong></p>
+                        <div class="mt-auto">
+                            <!-- Botão para abrir a modal -->
+                            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#banana">Ver Mais</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Modal -->
+            <div class="modal fade" id="banana" tabindex="-1" aria-labelledby="acaiModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="acaiModalLabel">Banana Delight. (Imagem Ilustrativa)</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <img src="/image/Tapioca/banana.jpg" class="img-fluid mb-3" alt="Açaí Médio" />
+                            <p>
+                                Este prato se destaca por sua combinação única e equilibrada. A doçura natural da banana se une harmoniosamente ao sabor fresco e suave do queijo muçarela. O mel acrescenta um toque tropical inconfundível, enquanto a canela, com seu aroma inebriante, arremata a receita com um toque mágico e quente. Uma opção fit sem deixar de ser incrivelmente saborosa para os amantes de uma boa tapioca doce.
+                                Sem glúten | Sem lactose | Sem açúcar | Sem conservantes |
+                            </p>
+                            <p><strong>Preço: R$ 28,50</strong></p>
+
+
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card 5 -->
+            <div class="col-md-4">
+                <div class="card mb-4" style="height: 100%;">
+                    <img src="/image/Tapioca/Banafofff.jpg" class="card-img-top" alt="Açaí Grande" />
+                    <div class="card-body d-flex flex-column">
+                        <h5 class="card-title">Banoffe Delight fit ou tradicional. (Imagem Ilustrativa)</h5>
+                        <p class="card-text">.</p>
+                        <select id="adicionais" name="adicionais" class="form-control">
+                            <option value="" disabled selected>Selecione um adicional</option>
+                            <option value="aveia">Tradicional</option>
+                            <option value="aveia">Fit</option>
+                          
+
+                        </select>
+                        <br />
+                        <p class="card-text"><strong>Preço: R$ 31,00</strong></p>
+                        <div class="mt-auto">
+                            <!-- Botão para abrir a modal -->
+                            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#bananaa">Ver Mais</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Modal -->
+            <div class="modal fade" id="bananaa" tabindex="-1" aria-labelledby="acaiModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="acaiModalLabel">Banoffe Delight fit ou tradicional. (Imagem Ilustrativa)</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <img src="/image/Tapioca/Banafofff.jpg" class="img-fluid mb-3" alt="Açaí Médio" />
+                            <p>
+                                Tapioca Fit – Uma combinação irresistível de banana, pasta de amendoim sabor banoffee, castanhas crocantes e chantilly zero, equilibrando sabor e leveza em cada mordida Zero: |Glúten| lactose | açúcar.
+                                <br />
+                                Tapioca Tradicional – Clássica e deliciosa, com banana, paçoca, doce de leite e chantilly tradicional preparada com carinho para quem aprecia o sabor autêntico da tapioca.
+                            </p>
+                            <p><strong>Preço: R$ 31,00</strong></p>
+
+
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+
+
+
+
+            
+
+          
+
+
+        </div>
+    </div>
+
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

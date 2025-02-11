@@ -1,0 +1,300 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="pt-BR">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <title>Lista de Produtos</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/css/Navbar.css">
+    <link rel="stylesheet" href="~/css/comboBox.css">
+    <link rel="stylesheet" href="~/css/Titulos.css">
+    <link rel="stylesheet" href="~/css/espacamento.css">
+    <link rel="stylesheet" href="~/css/pedidoWhats.css">
+ 
+</head>
+<body>
+
+    <div class="container">
+        <img src="/image/whatsapp-icon.png" alt="WhatsApp" class="whatsapp-icon">
+        <span class="whatsapp-text">WhatsApp</span>
+
+        <p class="description">Já escolheu seu pedido? 🍓 Clique no link abaixo e faça seu pedido agora pelo WhatsApp! 📲👇</p>
+        <a href="https://wa.me/5534997994865" class="order-button">FAZER PEDIDO AGORA</a>
+    </div>
+
+    <div class="container mt-5">
+        <h2 id="acai-title"  ="text-center mb-4">Lanches Delight</h2>
+        <div class="row">
+            <!-- Card 1 -->
+            <div class="col-md-4">
+                <div class="card mb-4" style="height: 100%;">
+                    <img src="/image/Lanches/LCappuccino.png" class="card-img-top" alt="Açaí Médio" />
+                    <div class="card-body d-flex flex-column">
+                        <h5 class="card-title">Cappuccino Delight de cacau. 300ml</h5>
+                        <p class="card-text"></p>
+                        <p class="card-text"><strong>Preço: R$ 24,00</strong></p>
+                        <div class="mt-auto">
+                            <!-- Botão para abrir a modal -->
+                            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#CocazeroModal">Ver Mais</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Modal -->
+            <div class="modal fade" id="CocazeroModal" tabindex="-1" aria-labelledby="acaiModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="acaiModalLabel">Cappuccino Delight de cacau. 300ml</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <img src="/image/Lanches/LCappuccino.png" class="img-fluid mb-3" alt="Açaí Médio" />
+                            <p>
+                                Desperte seus sentidos com o luxo de nosso Cappuccino Light de Cacau 300ml, um verdadeiro deleite sofisticado e cuidadosamente elaborado. Este cappuccino apresenta uma leveza incomparável, com um adicional generoso de chantilly, cada gole é uma celebração. O toque exótico de canela polvilhada realça a experiência, proporcionando um sabor que aquece e revigora. Este é o prazer perfeito para começar seu Dia, sem comprometer sua dieta. Uma experiência gustativa sublime que encanta o paladar, energiza o corpo, Ideal para um café da manhã refinado e indulgente.
+                                | Sem glúten | Sem lactose | Sem açúcar | Sem conservantes | Adoçantes naturais |
+                                No Açaí Delight, nos preocupamos com a qualidade e apresentação de cada pedido. Por isso, o chantilly do cappuccino é enviado separado, garantindo que ele chegue fresco e em perfeito estado durante a entrega. Assim, você pode desfrutar do cappuccino do jeito que merece!
+                            </p>
+                            <p><strong>Preço: R$ 24,00</strong></p>
+
+
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <!-- Card 2 -->
+            <div class="col-md-4">
+                <div class="card mb-4" style="height: 100%;">
+                    <img src="/image/Lanches/Croquemonsieur.png" class="card-img-top" alt="Açaí Grande" />
+                    <div class="card-body d-flex flex-column">
+                        <h5 class="card-title">Croque-monsieur de pernil e queijo.</h5>
+                        <p class="card-text">.</p>
+                        <p class="card-text"><strong>Preço: R$ 28,90</strong></p>
+                        <div class="mt-auto">
+                            <!-- Botão para abrir a modal -->
+                            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#CocaModal">Ver Mais</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Modal -->
+            <div class="modal fade" id="CocaModal" tabindex="-1" aria-labelledby="acaiModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="acaiModalLabel">Croque-monsieur de pernil e queijo</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <img src="/image/Lanches/Croquemonsieur.png" class="img-fluid mb-3" alt="Açaí Médio" />
+                            <p>
+                                Uma releitura francesa, feita com tostex, um queijo minas frescal e pernil, que traz uma cremosidade inigualável ao prato, é realçado pela mostarda Dijon, proporcionando um toque picante e autêntico. O mel acrescenta uma nota de doçura sutil que equilibra perfeitamente a intensidade dos outros ingredientes. O molho Bechamel, feito à perfeição, confere uma textura aveludada e irresistível, enquanto o Parmesão fresco gratinado por cima adiciona uma crocância saborosa. Finalizado com salsinha desidratada, que agrega cor e um frescor leve ao prato. Uma verdadeira delícia que agrada a todos os paladares!
+                            </p>
+                            <p><strong>Preço: R$ 28,90</strong></p>
+
+
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+                         
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <!-- Card 3 -->
+            <div class="col-md-4">
+                <div class="card mb-4" style="height: 100%;">
+                    <img src="/image/Lanches/LTostadaIntegral.png" class="card-img-top" alt="Açaí Grande" />
+                    <div class="card-body d-flex flex-column">
+                        <h5 class="card-title">Tostada Integral com ovos cremosos e bacon. (Imagem Ilustrativa)</h5>
+                        <p class="card-text">.</p>
+                        <p class="card-text"><strong>Preço: R$ 23,60</strong></p>
+                        <div class="mt-auto">
+                            <!-- Botão para abrir a modal -->
+                            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#pernil">Ver Mais</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Modal -->
+            <div class="modal fade" id="pernil" tabindex="-1" aria-labelledby="acaiModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="acaiModalLabel">Tostada Integral com ovos cremosos e bacon. (Imagem Ilustrativa)</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <img src="/image/Lanches/LTostadaIntegral.png" class="img-fluid mb-3" alt="Açaí Médio" />
+                            <p>
+                                Duas deliciosas tostadas integrais, os ovos preparados à moda francesa proporcionam uma cremosidade irresistível, harmonizando perfeitamente com o queijo. Tomates cerejas frescos adicionam um toque de leveza ao prato. A farofa de bacon, crocante e saborosa, é o complemento perfeito. Para finalizar, o prato é delicadamente polvilhado com orégano, páprica e salsinha desidratada, infundindo um aroma tentador. Uma opção nutritiva e saborosa para começar o seu Dia garantindo energia e bem-estar para você aproveitar ao máximo!
+                            </p>
+                            <p><strong>Preço: R$ 23,60</strong></p>
+
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Espaçamento a cada 3 cards -->
+            <div class="row mb-4"></div> <!-- Adiciona um espaço abaixo dos primeiros três cards -->
+
+            <!-- Card 4 -->
+            <div class="col-md-4">
+                <div class="card mb-4" style="height: 100%;">
+                    <img src="/image/Lanches/Croquemonsieur.png" class="card-img-top" alt="Açaí Grande" />
+                    <div class="card-body d-flex flex-column">
+                        <h5 class="card-title">Croque-monsieur de peito de peru.</h5>
+                        <p class="card-text">.</p>
+                        <p class="card-text"><strong>Preço: R$ 29,90</strong></p>
+                        <div class="mt-auto">
+                            <!-- Botão para abrir a modal -->
+                            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#pizza">Ver Mais</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Modal -->
+            <div class="modal fade" id="pizza" tabindex="-1" aria-labelledby="acaiModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="acaiModalLabel">Croque-monsieur de peito de peru.</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <img src="/image/Lanches/Croquemonsieur.png" class="img-fluid mb-3" alt="Açaí Médio" />
+                            <p>
+                                Uma releitura francesa feita com tostex, queijo minas frescal, combinado com a picância refinada da Mostarda Dijon e o toque adocicado do mel. O molho bechamel, cremoso e aveludado, agrega uma textura rica ao prato, enquanto o parmesão, de sabor acentuado, intensifica o perfil de sabor. O peito de peru, suculento e saboroso, é o protagonista do lanche, e a salsinha desidratada, com seu frescor característico, traz um contraste perfeito para finalizar essa delícia. Uma refeição que promete agradar até os paladares mais exigentes.
+                            </p>
+                            <p><strong>Preço: R$ 29,90</strong></p>
+
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+            <!-- Card 5 -->
+            <div class="col-md-4">
+                <div class="card mb-4" style="height: 100%;">
+                    <img src="/image/Lanches/LSanduiche.png" class="card-img-top" alt="Açaí Grande" />
+                    <div class="card-body d-flex flex-column">
+                        <h5 class="card-title">Sanduiche natural</h5>
+                        <p class="card-text">.</p>
+                        <p class="card-text"><strong>Preço: R$ 22,50</strong></p>
+                        <div class="mt-auto">
+                            <!-- Botão para abrir a modal -->
+                            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#caprese">Ver Mais</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Modal -->
+            <div class="modal fade" id="caprese" tabindex="-1" aria-labelledby="acaiModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="acaiModalLabel">Sanduiche natural</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <img src="/image/Lanches/LSanduiche.png" class="img-fluid mb-3" alt="Açaí Médio" />
+                            <p>
+                                Surpreenda-se com nosso Sanduíche Natural, perfeito para começar o Dia. Sinta o sabor inconfundível do frango cuidadosamente desfiado, enriquecido pela cremosidade da nossa maionese da casa e da mussarela. A cenoura ralada acrescenta um toque de frescor, enquanto a azeitona e as uvas passas introduzem um contraste doce e salgado que vai encantar seu paladar. Para finalizar, o gergelim agrega uma textura crocante, e a alface e o tomate fornecem um frescor que só os vegetais mais frescos podem oferecer. Experimente e se apaixone!
+                                Alérgicos: Receita contém ovos.
+                                | Sem lactose | Sem conservantes | Temperos naturais |
+                            
+                            </p>
+                            <p><strong>Preço: R$ 22,50</strong></p>
+
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <!-- Card 6 -->
+            <div class="col-md-4">
+                <div class="card mb-4" style="height: 100%;">
+                    <img src="/image/Lanches/LMuffins.png" class="card-img-top" alt="Açaí Grande" />
+                    <div class="card-body d-flex flex-column">
+                        <h5 class="card-title">Muffin de legumes e frango.</h5>
+                        <p class="card-text">.</p>
+                        <p class="card-text"><strong>Preço: R$ 18,90</strong></p>
+                        <div class="mt-auto">
+                            <!-- Botão para abrir a modal -->
+                            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#FrangoBaconQueijo">Ver Mais</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Modal -->
+            <div class="modal fade" id="FrangoBaconQueijo" tabindex="-1" aria-labelledby="acaiModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="acaiModalLabel">Muffin de legumes e frango</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <img src="/image/Lanches/LMuffins.png" class="img-fluid mb-3" alt="Açaí Médio" />
+                            <p>
+                                Deliciosos Muffins de legumes e frango, compostos por uma seleção sofisticada de legumes triturados, finamente misturados com frango de alta qualidade. Cada mordida é realçada com a suculência do tomate fresco e a cremosidade do queijo muçarela, com um toque final de orégano e salsinha desidratada para trazer uma nota aromática. Este pacote inclui três unidades desses muffins deliciosos e nutritivos, perfeitamente assados para seu deleite.
+                                Acompanha 30ml de ketchup da casa para adicionar um toque especial a sua refeição.
+
+                                Alérgicos: Receita contém ovos.
+                                Sem glúten | Sem lactose | Sem açúcar | Sem conservantes | Temperos naturais |
+                            </p>
+                            <p><strong>Preço: R$ 18,90</strong></p>
+
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+         
+
+          
+
+
+        </div>
+    </div>
+
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

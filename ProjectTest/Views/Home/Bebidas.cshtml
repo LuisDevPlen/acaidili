@@ -1,0 +1,272 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="pt-BR">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <title>Lista de Produtos</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/css/Navbar.css">
+    <link rel="stylesheet" href="~/css/Acai.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/css/comboBox.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/css/Titulos.css">
+    <link rel="stylesheet" href="~/css/espacamento.css">
+    <link rel="stylesheet" href="~/css/pedidoWhats.css">
+ 
+</head>
+<body>
+
+    <div class="container">
+        <img src="/image/whatsapp-icon.png" alt="WhatsApp" class="whatsapp-icon">
+        <span class="whatsapp-text">WhatsApp</span>
+
+        <p class="description">Já escolheu seu pedido? 🍓 Clique no link abaixo e faça seu pedido agora pelo WhatsApp! 📲👇</p>
+        <a href="https://wa.me/5534997994865" class="order-button">FAZER PEDIDO AGORA</a>
+    </div>
+
+    <div class="container mt-5">
+        <h2 id="acai-title" class="text-center mb-4">Bebidas</h2>
+        <div class="row">
+            <!-- Card 1 -->
+            <div class="col-md-4">
+                <div class="card mb-4" style="height: 100%;">
+                    <img src="/image/Bebidas/cocalata.png" class="card-img-top" alt="Açaí Médio" />
+                    <div class="card-body d-flex flex-column">
+                        <h5 class="card-title">Coca lata zero Açucar 300ml</h5>
+                        <p class="card-text"></p>
+                        <p class="card-text"><strong>Preço: R$ 5,00</strong></p>
+                        <div class="mt-auto">
+                            <!-- Botão para abrir a modal -->
+                            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#CocazeroModal">Ver Mais</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Modal -->
+            <div class="modal fade" id="CocazeroModal" tabindex="-1" aria-labelledby="acaiModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="acaiModalLabel">Coca lata zero Açucar 300ml</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <img src="/image/Bebidas/cocalata.png" class="img-fluid mb-3" alt="Açaí Médio" />
+                            <p>
+                                Desfrute de todo o sabor refrescante da Coca-Cola Zero Açúcar 300ml
+                            </p>
+                            <p><strong>Preço: R$ 5,00</strong></p>
+
+
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+                  
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <!-- Card 2 -->
+            <div class="col-md-4">
+                <div class="card mb-4" style="height: 100%;">
+                    <img src="/image/Bebidas/cocalatanormal.png" class="card-img-top" alt="Açaí Grande" />
+                    <div class="card-body d-flex flex-column">
+                        <h5 class="card-title">Coca lata 300ml</h5>
+                        <p class="card-text">.</p>
+                        <p class="card-text"><strong>Preço: R$ 5,00</strong></p>
+                        <div class="mt-auto">
+                            <!-- Botão para abrir a modal -->
+                            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#CocaModal">Ver Mais</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Modal -->
+            <div class="modal fade" id="CocaModal" tabindex="-1" aria-labelledby="acaiModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="acaiModalLabel">Coca lata 300ml</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <img src="/image/Bebidas/cocalatanormal.png" class="img-fluid mb-3" alt="Açaí Médio" />
+                            <p>
+                                Curta o sabor inconfundível da Coca-Cola tradicional 300ml
+                            <p><strong>Preço: R$ 5,00</strong></p>
+
+
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+
+
+            <!-- Card 3 -->
+            <div class="col-md-4">
+                <div class="card mb-4" style="height: 100%;">
+                    <img src="/image/Bebidas/coca2.png" class="card-img-top" alt="Açaí Médio" />
+                    <div class="card-body d-flex flex-column">
+                        <h5 class="card-title">Coca  2 litros</h5>
+                        <br />
+                        <p class="card-text"></p>
+                        <p class="card-text"><strong>Preço: R$ 12,00</strong></p>
+                        <div class="mt-auto">
+                            <!-- Botão para abrir a modal -->
+                            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#coca2">Ver Mais</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Modal -->
+            <div class="modal fade" id="coca2" tabindex="-1" aria-labelledby="acaiModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="acaiModalLabel">Coca lata zero Açucar 300ml</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <img src="/image/Bebidas/coca2.png" class="img-fluid mb-3" alt="Açaí Médio" />
+                            <p>
+                                Desfrute de todo o sabor refrescante da Coca-Cola 2 litros.
+                            </p>
+                            <p><strong>Preço: R$ 5,00</strong></p>
+
+
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Espaçamento a cada 3 cards -->
+            <div class="row mb-4"></div> <!-- Adiciona um espaço abaixo dos primeiros três cards -->
+
+
+            <!-- Card 4 -->
+            <div class="col-md-4">
+                <div class="card mb-4" style="height: 100%;">
+                    <img src="/image/Bebidas/cocazero2.png" class="card-img-top" alt="Açaí Grande" />
+                    <div class="card-body d-flex flex-column">
+                        <h5 class="card-title">Coca cola 2 litros zero</h5>
+                        <p class="card-text">.</p>
+                       
+                        <p class="card-text"><strong>Preço: R$ 12,00</strong></p>
+                        <div class="mt-auto">
+                            <!-- Botão para abrir a modal -->
+                            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#czero">Ver Mais</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Modal -->
+            <div class="modal fade" id="czero" tabindex="-1" aria-labelledby="acaiModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="acaiModalLabel">Coca cola 2 litros zero</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <img src="/image/Bebidas/cocazero2.png" class="img-fluid mb-3" alt="Açaí Médio" />
+                            <p>
+                                Curta o sabor inconfundível da Coca-Cola tradicional 2 litros.
+                            </p>
+                            <p><strong>Preço: R$ 12,00</strong></p>
+
+
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+
+
+
+            <!-- Card 5 -->
+            <div class="col-md-4">
+                <div class="card mb-4" style="height: 100%;">
+                    <img src="/image/Bebidas/polpas.jpg" class="card-img-top" alt="Açaí Grande" />
+                    <div class="card-body d-flex flex-column">
+                        <h5 class="card-title">Polpa de Frutas - Garrafa 500ml</h5>
+                        <p class="card-text">.</p>
+                        <p class="card-text"><strong>Polpas Disponíveis:</strong></p>
+                        <select id="adicionais" name="adicionais" class="form-control">
+                            <option value="" disabled selected>Selecione a polpa</option>
+                            <option value="caju">Caju</option>
+                            <option value="morango">Morango</option>
+                            <option value="cupuaçu">Cupuaçu</option>
+                            <option value="maracujá">Maracujá</option>
+
+                        </select>
+                        <br />
+                        <p class="card-text"><strong>Preço: R$ 7,50</strong></p>
+                        <div class="mt-auto">
+                            <!-- Botão para abrir a modal -->
+                            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#polpaModal">Ver Mais</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Modal -->
+            <div class="modal fade" id="polpaModal" tabindex="-1" aria-labelledby="acaiModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="acaiModalLabel">Polpa de Frutas - Garrrafa 500ml</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <img src="/image/Bebidas/polpas.jpg" class="img-fluid mb-3" alt="Açaí Médio" />
+                            <p>
+                                Polpa de Frutas Natural - Garrafa 500ml
+                                Delicie-se com o frescor e sabor autêntico de nossas polpas de frutas 100% naturais, disponíveis em garrafas de 500ml. Ideal para sucos, vitaminas e outras receitas refrescantes, nossas polpas são produzidas com frutas selecionadas, sem adição de conservantes.
+                            </p>
+                       
+                            <p><strong>Preço: R$ 7,50</strong></p>
+
+
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+                           
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+          
+
+
+        </div>
+    </div>
+
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

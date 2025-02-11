@@ -1,0 +1,399 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="pt-BR">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <title>Lista de Produtos</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/css/Navbar.css">
+    <link rel="stylesheet" href="~/css/Titulos.css">
+    <link rel="stylesheet" href="~/css/espacamento.css">
+    <link rel="stylesheet" href="~/css/pedidoWhats.css">
+ 
+</head>
+<body>
+
+    <div class="container">
+        <img src="/image/whatsapp-icon.png" alt="WhatsApp" class="whatsapp-icon">
+        <span class="whatsapp-text">WhatsApp</span>
+
+        <p class="description">Já escolheu seu pedido? 🍓 Clique no link abaixo e faça seu pedido agora pelo WhatsApp! 📲👇</p>
+        <a href="https://wa.me/5534997994865" class="order-button">FAZER PEDIDO AGORA</a>
+    </div>
+
+    <div class="container mt-5">
+        <h2 id="acai-title"  class="text-center mb-4">Recheadinhos</h2>
+        <div class="row">
+            <!-- Card 1 -->
+            <div class="col-md-4">
+                <div class="card mb-4" style="height: 100%;">
+                    <img src="/image/Recheadinhos/casadinho.png" class="card-img-top" alt="Açaí Médio" />
+                    <div class="card-body d-flex flex-column">
+                        <h5 class="card-title">01 Casadinho + Nutella + Morangos 330ml.</h5>
+
+                        <p class="card-text"></p>
+                        <p class="card-text"><strong>Preço: R$ 30,40</strong></p>
+                        <div class="mt-auto">
+                            <!-- Botão para abrir a modal -->
+                            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#CocazeroModal">Ver Mais</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Modal -->
+            <div class="modal fade" id="CocazeroModal" tabindex="-1" aria-labelledby="acaiModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="acaiModalLabel">01 Casadinho + Nutella + Morangos 330ml.</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <img src="/image/Recheadinhos/casadinho.png" class="img-fluid mb-3" alt="Açaí Médio" />
+                            <p>
+                                Açaí recheado com creme Ninho, Nutella e morangos fresquinhos. Uma explosão de sabor em cada colherada!
+                            </p>
+                            <p><strong>Preço: R$ 30,40</strong></p>
+
+
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+       
+
+
+                <!-- Card 2 -->
+                <div class="col-md-4">
+                    <div class="card mb-4" style="height: 100%;">
+                    <img src="/image/Recheadinhos/banoff.jpg" class="card-img-top" alt="Açaí Médio" />
+                        <div class="card-body d-flex flex-column">
+                        <h5 class="card-title">Banoffe tradicional ou fit 330ml.</h5>
+                            <p class="card-text"></p>
+                            <p class="card-text"><strong>Preço: R$ 24,90</strong></p>
+                            <div class="mt-auto">
+                                <!-- Botão para abrir a modal -->
+                                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#carne">Ver Mais</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Modal -->
+                <div class="modal fade" id="carne" tabindex="-1" aria-labelledby="acaiModalLabel" aria-hidden="true">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                            <h5 class="modal-title" id="acaiModalLabel">Banoffe tradicional ou fit 330ml.</h5>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                            <img src="/image/Recheadinhos/banoff.jpg" class="img-fluid mb-3" alt="Açaí Médio" />
+                                <p>
+                                Opção tradicional: Nosso açaí cremoso vem recheado com a doçura da paçoca, pedaços frescos de banana, um toque irresistível de doce de leite, finalizado com chantilly aveludado e um toque especial de canela para realçar os sabores. Perfeito para adoçar o seu dia! <br />  <br />
+
+                                🌱 Opção Fit: A combinação perfeita de açaí cremoso com pasta de amendoim sabor banoffee, crocantes castanhas e chantilly zero. Uma explosão de sabor irresistível, sem culpa!
+                                ✅ Sem glúten | Sem lactose | Sem açúcar | Rico em proteínas e energia natural
+
+                              
+                            </p>
+
+                            <p>
+                               Opções:
+                            </p>
+                            <ul>
+                                <li>Sem canela.</li>
+                                <li>Canela</li>
+                                <li>Fit - R$ 2,00</li>
+                                
+                            </ul>
+                                <p><strong>Preço: R$ 24,90</strong></p>
+
+
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+            <!-- Card 3 -->
+            <div class="col-md-4">
+                <div class="card mb-4" style="height: 100%;">
+                    <img src="/image/Recheadinhos/ourobranco.png" class="card-img-top" alt="Açaí Médio" />
+                    <div class="card-body d-flex flex-column">
+                        <h5 class="card-title">Ouro de Nutella 330ml.</h5>
+                        <p class="card-text"></p>
+                        <p class="card-text"><strong>Preço: R$ 29,50</strong></p>
+                        <div class="mt-auto">
+                            <!-- Botão para abrir a modal -->
+                            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#ouro">Ver Mais</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Modal -->
+            <div class="modal fade" id="ouro" tabindex="-1" aria-labelledby="acaiModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="acaiModalLabel">Ouro de Nutella 330ml.</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <img src="/image/Recheadinhos/ourobranco.png" class="img-fluid mb-3" alt="Açaí Médio" />
+                            <p>
+                                Descubra o luxo em cada colherada! Açaí cremoso, Nutella aveludada, o toque dourado do Ouro Branco e a crocância irresistível do Tubin se unem para criar a experiência mais sofisticada e saborosa. Um copo recheado de prazer, feito para quem não abre mão de qualidade e sabor único.
+                            </p>
+                            <p><strong>Preço: R$ 29,50</strong></p>
+
+
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Espaçamento a cada 3 cards -->
+            <div class="row mb-4"></div> <!-- Adiciona um espaço abaixo dos primeiros três cards -->
+
+            <!-- Card 4 -->
+            <div class="col-md-4">
+                <div class="card mb-4" style="height: 100%;">
+                    <img src="/image/Recheadinhos/ourobranco.png" class="card-img-top" alt="Açaí Médio" />
+                    <div class="card-body d-flex flex-column">
+                        <h5 class="card-title">Ouro de Nutella 500ml.</h5>
+                        <p class="card-text"></p>
+                        <p class="card-text"><strong>Preço: R$ 33,00</strong></p>
+                        <div class="mt-auto">
+                            <!-- Botão para abrir a modal -->
+                            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#ouro2">Ver Mais</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Modal -->
+            <div class="modal fade" id="ouro2" tabindex="-1" aria-labelledby="acaiModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="acaiModalLabel">Ouro de Nutella 500ml.</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <img src="/image/Recheadinhos/ourobranco.png" class="img-fluid mb-3" alt="Açaí Médio" />
+                            <p>
+                                Descubra o luxo em cada colherada! Açaí cremoso, Nutella aveludada, o toque dourado do Ouro Branco e a crocância irresistível do Tubin se unem para criar a experiência mais sofisticada e saborosa. Um copo recheado de prazer, feito para quem não abre mão de qualidade e sabor único.
+                            </p>
+                            <p><strong>Preço: R$ 33,00</strong></p>
+
+
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <!-- Card 5 -->
+            <div class="col-md-4">
+                <div class="card mb-4" style="height: 100%;">
+                    <img src="/image/Recheadinhos/sonhoDeValsa.png" class="card-img-top" alt="Açaí Médio" />
+                    <div class="card-body d-flex flex-column">
+                        <h5 class="card-title">Valsa de Nutella 330ml.</h5>
+                        <p class="card-text"></p>
+                        <p class="card-text"><strong>Preço: R$ 29,50</strong></p>
+                        <div class="mt-auto">
+                            <!-- Botão para abrir a modal -->
+                            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#valsa">Ver Mais</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Modal -->
+            <div class="modal fade" id="valsa" tabindex="-1" aria-labelledby="acaiModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="acaiModalLabel">Valsa de Nutella 330ml.</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <img src="/image/Recheadinhos/sonhoDeValsa.png" class="img-fluid mb-3" alt="Açaí Médio" />
+                            <p>
+                                Sinta o prazer de um açaí cremoso combinado com a indulgente Nutella, pedaços do irresistível Sonho de Valsa e a crocância do Tubin. Uma explosão de sabores e texturas que vai te envolver a cada colherada, em um copo recheado de delícias.
+                            </p>
+                            <p><strong>Preço: R$ 29,50</strong></p>
+
+
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card 6 -->
+            <div class="col-md-4">
+                <div class="card mb-4" style="height: 100%;">
+                    <img src="/image/Recheadinhos/sonhoDeValsa.png" class="card-img-top" alt="Açaí Médio" />
+                    <div class="card-body d-flex flex-column">
+                        <h5 class="card-title">Valsa de Nutella 500ml.</h5>
+                        <p class="card-text"></p>
+                        <p class="card-text"><strong>Preço: R$ 33,00</strong></p>
+                        <div class="mt-auto">
+                            <!-- Botão para abrir a modal -->
+                            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#valsa2">Ver Mais</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Modal -->
+            <div class="modal fade" id="valsa2" tabindex="-1" aria-labelledby="acaiModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="acaiModalLabel">Valsa de Nutella 500ml.</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <img src="/image/Recheadinhos/sonhoDeValsa.png" class="img-fluid mb-3" alt="Açaí Médio" />
+                            <p>
+                                Sinta o prazer de um açaí cremoso combinado com a indulgente Nutella, pedaços do irresistível Sonho de Valsa e a crocância do Tubin. Uma explosão de sabores e texturas que vai te envolver a cada colherada, em um copo recheado de delícias.
+                            </p>
+                            <p><strong>Preço: R$ 33,00</strong></p>
+
+
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Espaçamento a cada 3 cards -->
+            <div class="row mb-4"></div> <!-- Adiciona um espaço abaixo dos primeiros três cards -->
+
+            <!-- Card 7 -->
+            <div class="col-md-4">
+                <div class="card mb-4" style="height: 100%;">
+                    <img src="/image/Recheadinhos/Morango trufado (1).jpg" class="card-img-top" alt="Açaí Médio" />
+                    <div class="card-body d-flex flex-column">
+                        <h5 class="card-title">Morango trufado 330ml.</h5>
+                        <p class="card-text"></p>
+                        <p class="card-text"><strong>Preço: R$ 27,90</strong></p>
+                        <div class="mt-auto">
+                            <!-- Botão para abrir a modal -->
+                            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#moran">Ver Mais</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Modal -->
+            <div class="modal fade" id="moran" tabindex="-1" aria-labelledby="acaiModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="acaiModalLabel">Morango trufado 330ml.</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <img src="/image/Recheadinhos/Morango trufado (1).jpg" class="img-fluid mb-3" alt="Açaí Médio" />
+                            <p>
+                                A perfeita combinação entre a cremosidade do sorvete de morango com chocolate e a intensidade do creme de avelã, mergulhados no nosso irresistível açaí. Uma explosão de sabor que vai conquistar seu paladar a cada colherada!
+                            
+                            </p>
+                            <p><strong>Preço: R$ 27,90</strong></p>
+
+
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card 8 -->
+            <div class="col-md-4">
+                <div class="card mb-4" style="height: 100%;">
+                    <img src="/image/Recheadinhos/Morango trufado (1).jpg" class="card-img-top" alt="Açaí Médio" />
+                    <div class="card-body d-flex flex-column">
+                        <h5 class="card-title">Morango trufado 500ml.</h5>
+                        <p class="card-text"></p>
+                        <p class="card-text"><strong>Preço: R$ 31,40</strong></p>
+                        <div class="mt-auto">
+                            <!-- Botão para abrir a modal -->
+                            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#moran2">Ver Mais</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Modal -->
+            <div class="modal fade" id="moran2" tabindex="-1" aria-labelledby="acaiModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="acaiModalLabel">Morango trufado 500ml.</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <img src="/image/Recheadinhos/Morango trufado (1).jpg" class="img-fluid mb-3" alt="Açaí Médio" />
+                            <p>
+                                A perfeita combinação entre a cremosidade do sorvete de morango com chocolate e a intensidade do creme de avelã, mergulhados no nosso irresistível açaí. Uma explosão de sabor que vai conquistar seu paladar a cada colherada!
+
+                            </p>
+                            <p><strong>Preço: R$ 31,40</strong></p>
+
+
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+
+
+          
+
+        </div>
+    </div>
+
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

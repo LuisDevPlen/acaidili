@@ -1,0 +1,52 @@
+body {
+    font-family: 'Arial', sans-serif;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    padding: 20px;
+}
+
+.logo {
+    width: 150px;
+    margin-bottom: 20px;
+}
+
+.description {
+    font-size: 20px; /* Aumentei o tamanho da fonte para mais destaque */
+    font-weight: bold; /* Tornei o texto em negrito para maior ênfase */
+    color: white; /* Cor branca aplicada */
+    margin-bottom: 20px;
+}
+
+.order-button {
+    background-color: #25D366;
+    color: white;
+    padding: 15px 25px;
+    font-size: 20px; /* Aumentei o tamanho da fonte para mais destaque */
+    font-weight: bold; /* Tornei o texto em negrito */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+    .order-button:hover {
+        background-color: #128C7E;
+    }
+
+.whatsapp-text {
+    color: white; /* Cor branca aplicada */
+    font-weight: bold; /* Texto em negrito */
+    font-size: 20px; /* Ajuste no tamanho da fonte, se necessário */
+    display: inline-block;
+    vertical-align: middle; /* Para alinhar a imagem com o texto */
+    margin-left: 10px; /* Espaço entre a imagem e o texto */
+}
+
+.whatsapp-icon {
+    width: 30px; /* Tamanho do ícone do WhatsApp */
+    vertical-align: middle; /* Para garantir o alinhamento do ícone com o texto */
+}

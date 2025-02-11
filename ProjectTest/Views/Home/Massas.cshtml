@@ -1,0 +1,255 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="pt-BR">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <title>Lista de Produtos</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/css/Navbar.css">
+    <link rel="stylesheet" href="~/css/Titulos.css">
+    <link rel="stylesheet" href="~/css/espacamento.css">
+    <link rel="stylesheet" href="~/css/pedidoWhats.css">
+</head>
+<body>
+
+    <div class="container">
+        <img src="/image/whatsapp-icon.png" alt="WhatsApp" class="whatsapp-icon">
+        <span class="whatsapp-text">WhatsApp</span>
+
+        <p class="description">Já escolheu seu pedido? 🍓 Clique no link abaixo e faça seu pedido agora pelo WhatsApp! 📲👇</p>
+        <a href="https://wa.me/5534997994865" class="order-button">FAZER PEDIDO AGORA</a>
+    </div>
+
+    <div class="container mt-5">
+        <h2 id="acai-title" class="text-center mb-4">Massas</h2>
+        <div class="row">
+            <!-- Card 1 -->
+            <div class="col-md-4">
+                <div class="card mb-4" style="height: 100%;">
+                    <img src="/image/Massas/carnebacon.jpg" class="card-img-top" alt="Açaí Médio" />
+                    <div class="card-body d-flex flex-column">
+                        <h5 class="card-title">Carne e bacon. (Imagem Ilustrativa)</h5>
+                        <p class="card-text"></p>
+                        <p class="card-text"><strong>Preço: R$ 48,90</strong></p>
+                        <div class="mt-auto">
+                            <!-- Botão para abrir a modal -->
+                            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#carneb">Ver Mais</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Modal -->
+            <div class="modal fade" id="carneb" tabindex="-1" aria-labelledby="acaiModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="acaiModalLabel">Carne e bacon. (Imagem Ilustrativa)</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <img src="/image/Massas/carnebacon.jpg" class="img-fluid mb-3" alt="Açaí Médio" />
+                            <p>
+                                Com a autêntica massa fusili, coberta por um irresistível molho rosê cremoso, que combina a sutileza do tomate fresco. Acrescentamos à essa maravilha, uma generosa porção de carne moída, cuidadosamente temperada e refogada. Para completar, adicionamos pedaços crocantes de bacon e uma camada de parmesão, proporcionando um sabor incomparável. Um prato repleto de sabor e tradição.
+                                Sem glúten | Sem lactose | Sem açúcar | Sem conservantes | Temperos naturais |
+                            </p>
+                            <p><strong>Preço: R$ 48,90</strong></p>
+
+
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <!-- Card 2 -->
+            <div class="col-md-4">
+                <div class="card mb-4" style="height: 100%;">
+                    <img src="/image/Massas/cogumelos.jpg" class="card-img-top" alt="Açaí Grande" />
+                    <div class="card-body d-flex flex-column">
+                        <h5 class="card-title">Cogumelos. (Imagem ilustrativa)</h5>
+                        <p class="card-text">.</p>
+                        <p class="card-text"><strong>Preço: R$ 51,00</strong></p>
+                        <div class="mt-auto">
+                            <!-- Botão para abrir a modal -->
+                            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#cogumelo">Ver Mais</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Modal -->
+            <div class="modal fade" id="cogumelo" tabindex="-1" aria-labelledby="acaiModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="acaiModalLabel">Cogumelos. (Imagem ilustrativa)l</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <img src="/image/Massas/cogumelos.jpg" class="img-fluid mb-3" alt="Açaí Médio" />
+                            <p>
+                                Este prato é elegantemente preparado com a massa fusili, amêndoas laminadas, um rico molho branco, que harmoniza perfeitamente com a mistura de cogumelos como funghi, shitake e shimeji, todos delicadamente salteados na manteiga com temperos naturais. A finalização fica por conta do autêntico parmesão, que adiciona uma textura cremosa, e a salsinha desidratada e cebolinha, que proporcionam um toque de frescor.
+                                Sem glúten | Sem lactose | Sem açúcar | Sem conservantes | Temperos naturais | Vegetariano |
+                            </p>
+                            <p><strong>Preço: R$ 51,00</strong></p>
+
+
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <!-- Card 3 -->
+            <div class="col-md-4">
+                <div class="card mb-4" style="height: 100%;">
+                    <img src="/image/Massas/capresemacara.jpg" class="card-img-top" alt="Açaí Grande" />
+                    <div class="card-body d-flex flex-column">
+                        <h5 class="card-title">Caprese com brócolis. (Imagem ilustrativa)</h5>
+                        <p class="card-text">.</p>
+                        <p class="card-text"><strong>Preço: R$ 52,00</strong></p>
+                        <div class="mt-auto">
+                            <!-- Botão para abrir a modal -->
+                            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#CocaModal">Ver Mais</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Modal -->
+            <div class="modal fade" id="CocaModal" tabindex="-1" aria-labelledby="acaiModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="acaiModalLabel">Caprese com brócolis. (Imagem ilustrativa)</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <img src="/image/Massas/capresemacara.jpg" class="img-fluid mb-3" alt="Açaí Médio" />
+                            <p>
+                                Este irresistível prato de 'Caprese com brócolis' apresenta uma massa fusili perfeitamente cozida, generosamente banhada em um cremoso molho vermelho, e realçada com o sabor vibrante do molho pesto de manjericão. A receita é enriquecida com tomates cereja frescos e brócolis crocantes, proporcionando uma experiência culinária rica e balanceada. A combinação do queijo minas e do queijo búfala adiciona uma suavidade deliciosa ao prato, enquanto a salsinha desidratada dá o toque final perfeito. Uma verdadeira explosão de sabores, esta é a escolha ideal para os amantes de massas.
+                                Sem glúten | Sem lactose | Sem açúcar | Sem conservantes | Temperos naturais | Vegetariano |
+                            </p>
+                            <p><strong>Preço: R$ 52,00</strong></p>
+
+
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+                         
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Espaçamento a cada 3 cards -->
+            <div class="row mb-4"></div> <!-- Adiciona um espaço abaixo dos primeiros três cards -->
+
+
+            <!-- Card 4 -->
+            <div class="col-md-4">
+                <div class="card mb-4" style="height: 100%;">
+                    <img src="/image/Massas/fusilefung.jpg" class="card-img-top" alt="Açaí Grande" />
+                    <div class="card-body d-flex flex-column">
+                        <h5 class="card-title">Fusili ao funghi com Beef ancho.</h5>
+                        <p class="card-text">.</p>
+                        <p class="card-text"><strong>Preço: R$ 60,00</strong></p>
+                        <div class="mt-auto">
+                            <!-- Botão para abrir a modal -->
+                            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#gunghi">Ver Mais</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Modal -->
+            <div class="modal fade" id="gunghi" tabindex="-1" aria-labelledby="acaiModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="acaiModalLabel">Fusili ao funghi com Beef ancho.</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <img src="/image/Massas/fusilefung.jpg" class="img-fluid mb-3" alt="Açaí Médio" />
+                            <p>
+                                Uma sofisticada massa fusili, generosamente regada com um molho branco cremoso de cogumelos funghi, é harmoniosamente combinada com o suculento Beef Ancho. Cada garfada trará a você notas delicadas de parmesão, acrescentando uma textura cremosa e sabor adocicado. O prato é finalizado com cheiro verde e salsinha desidratada, que adicionam uma camada extra de sabor e uma pitada de cor vibrante. Uma verdadeira festa de sabores e texturas para o seu paladar!
+                                Sem glúten | Sem lactose | Sem açúcar | Sem conservantes | Temperos naturais |
+                            </p>
+                            <p><strong>Preço: R$ 60,00</strong></p>
+
+
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <!-- Card 5 -->
+            <div class="col-md-4">
+                <div class="card mb-4" style="height: 100%;">
+                    <img src="/image/Massas/attmac.png" class="card-img-top" alt="Açaí Grande" />
+                    <div class="card-body d-flex flex-column">
+                        <h5 class="card-title">Fusili ao sugo com Beef ancho</h5>
+                        <p class="card-text">.</p>
+                        <p class="card-text"><strong>Preço: R$ 55,90</strong></p>
+                        <div class="mt-auto">
+                            <!-- Botão para abrir a modal -->
+                            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#sugo">Ver Mais</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Modal -->
+            <div class="modal fade" id="sugo" tabindex="-1" aria-labelledby="acaiModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="acaiModalLabel">Fusili ao sugo com Beef ancho.</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <img src="/image/Massas/attmac.png" class="img-fluid mb-3" alt="Açaí Médio" />
+                            <p>
+                                Desfrute de uma deliciosa massa Fusili, cuidadosamente preparada e servida com um suculento Beef Ancho. Este prato é generosamente coberto com um autêntico molho vermelho, feito com tomates frescos picados e enriquecido com queijo parmesão, finalizado com salsinha desidratada.
+                                Sem glúten | Sem lactose | Sem açúcar | Sem conservantes | Temperos naturais |
+                            </p>
+                            <p><strong>Preço: R$ 55,90</strong></p>
+
+
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+          
+
+
+        </div>
+    </div>
+
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

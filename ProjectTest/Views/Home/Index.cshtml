@@ -1,0 +1,377 @@
+﻿<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Açai Delight - Delícias do Açaí</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Caso utilize um arquivo CSS externo, mantenha-o. Aqui adicionamos um CSS inline customizado -->
+    <link rel="stylesheet" href="~/css/site.css">
+    <link rel="stylesheet" href="~/css/lancamentos.css">
+    <link rel="stylesheet" href="~/css/rodape.css">
+    <link rel="stylesheet" href="~/css/contatos.css">
+    <link rel="stylesheet" href="~/css/Titulos.css">
+
+    
+    <style>
+       
+    </style>
+</head>
+
+<body>
+
+
+
+    <!-- Painel Interativo com Ofertas -->
+    <div id="offer-carousel" class="carousel slide mt-4 container" data-bs-ride="carousel">
+        <div class="carousel-inner">
+
+            <div class="carousel-item active">
+                <img src="/image/Capa1.png" class="d-block w-100 img-fluid" alt="Oferta 3">
+            </div>
+
+            <div class="carousel-item active">
+                <img src="/image/Capa1.png" class="d-block w-100 img-fluid" alt="Oferta 3">
+            </div>
+
+
+            <div class="carousel-item active">
+                <img src="/image/Capa1.png" class="d-block w-100 img-fluid" alt="Oferta 3">
+            </div>
+
+
+
+            <!-- <div class="carousel-item">
+                <img src="/image/capa3.png" class="d-block w-100 img-fluid" alt="Oferta 2">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>Sobremesas Deliciosas</h5>
+                    <p>Experimente nossas sobremesas feitas com açaí e ingredientes naturais.</p>
+                </div>
+            </div>-->
+         
+
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#offer-carousel" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Anterior</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#offer-carousel" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Próximo</span>
+        </button>
+    </div>
+
+    <br/>
+
+    <header>
+        <nav class="navbar">
+            <div class="swiper-container navbar-nav">
+                <!-- Botão de navegação à esquerda -->
+            
+
+                <div class="swiper-wrapper">
+                    <div class="nav-item swiper-slide">
+                        <a class="nav-link" asp-controller="Home" asp-action="Acai">Açai</a>
+                    </div>
+                    <div class="nav-item swiper-slide">
+                        <a class="nav-link" asp-controller="Home" asp-action="Acaibatido">Açai batido</a>
+                    </div>
+                    <div class="nav-item swiper-slide">
+                        <a class="nav-link" asp-controller="Home" asp-action="Casadinho">Casadinho</a>
+                    </div>
+                    <div class="nav-item swiper-slide">
+                        <a class="nav-link" asp-controller="Home" asp-action="CombosEspeciais">Combos Especiais</a>
+                    </div>
+                    <div class="nav-item swiper-slide">
+                        <a class="nav-link" asp-controller="Home" asp-action="Iogurtes">Iogurtes</a>
+                    </div>
+                    <div class="nav-item swiper-slide">
+                        <a class="nav-link" asp-controller="Home" asp-action="LanchesDelight">Lanches Delight</a>
+                    </div>
+                    <div class="nav-item swiper-slide">
+                        <a class="nav-link" asp-controller="Home" asp-action="Massas">Massas</a>
+                    </div>
+                    <div class="nav-item swiper-slide">
+                        <a class="nav-link" asp-controller="Home" asp-action="Omeletes">Omeletes</a>
+                    </div>
+                    <div class="nav-item swiper-slide">
+                        <a class="nav-link" asp-controller="Home" asp-action="Panquecas">Panquecas</a>
+                    </div>
+                    <div class="nav-item swiper-slide">
+                        <a class="nav-link" asp-controller="Home" asp-action="Recheadinhos">Recheadinhos</a>
+                    </div>
+                    <div class="nav-item swiper-slide">
+                        <a class="nav-link" asp-controller="Home" asp-action="Smothies">Smothies</a>
+                    </div>
+                    <div class="nav-item swiper-slide">
+                        <a class="nav-link" asp-controller="Home" asp-action="Tapiocas">Tapiocas</a>
+                    </div>
+                    <div class="nav-item swiper-slide">
+                        <a class="nav-link" asp-controller="Home" asp-action="TapiocasDoces">Tapiocas Doces</a>
+                    </div>
+                    <div class="nav-item swiper-slide">
+                        <a class="nav-link" asp-controller="Home" asp-action="Wrap">Wrap</a>
+                    </div>
+                    <div class="nav-item swiper-slide">
+                        <a class="nav-link" asp-controller="Home" asp-action="WrapDoce">Wrap Doce</a>
+                    </div>
+                </div>
+
+                <div class="product-title">
+                    <p>Arraste para ver os tópicos dos produtos</p>
+                </div>
+
+           
+            </div>
+        </nav>
+    </header>
+
+
+
+   
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    
+
+    <!-- Introdução ao Cardápio -->
+    <div class="intro-container text-center mb-5 mt-5">
+        <h2 class="display-4 font-weight-bold text-light mb-4">Bem-vindo a Açaí Delight!</h2>
+        <p class="lead text-light mb-4">
+            Explore nosso cardápio repleto de opções irresistíveis e uma deliciosa variedade de açaí, pratos saudáveis, fitness e tradicionais, pensados para proporcionar uma alimentação saborosa, equilibrada e cheia de energia para o seu dia a dia.
+            <span class="font-weight-bold text-warning">Encontre a combinação perfeita</span>
+            para o seu paladar e venha se apaixonar pela Açai Delight!
+        </p>
+
+    </div>
+
+    <section class="product-container">
+        <h2 id="acai-title">Destaques</h2>
+
+        <button class="nav-button left" onclick="moveCarousel(-1)">&#10094;</button>
+
+        <div class="product-carousel">
+            <div class="product-card">
+                <img src="image/ImagensLancamento/LancamentoChickenCheedar.jpg" alt="Big Mac" class="product-image">
+                <h2>Omelete Chicken Cheddar</h2>
+                <p class="product-description">Frango, queijo em fatias e requeijão cheddar Polenghi</p>
+                <p class="price">R$ 29,00</p>
+                <button class="order-button" onclick="window.open('https://wa.me/5534997994865', '_blank')">
+                    Peça agora
+                </button>
+
+            </div>
+
+            <div class="product-card">
+                <img src="image/ImagensLancamento/LancamentoPeitoDePeru.jpg" alt="McChicken" class="product-image">
+                <h2>Omelete Peito de peru</h2>
+                <p class="product-description">Fatias de peito de peru, queijo minas frescal.</p>
+                <p class="price">R$ 28,00</p>
+                <button class="order-button" onclick="window.open('https://wa.me/5534997994865', '_blank')">
+                    Peça agora
+                </button>
+
+            </div>
+
+            <div class="product-card">
+                <img src="image/ImagensLancamento/LancamentoMacarrãoFunghi.jpg" alt="McFlurry" class="product-image">
+                <h2>Fusili ao funghi com Beef ancho.</h2>
+                <p class="product-description">Molho branco cremoso de cogumelos funghi, com o suculento Beef</p>
+                <p class="price">R$ 60,00</p>
+                <button class="order-button" onclick="window.open('https://wa.me/5534997994865', '_blank')">
+                    Peça agora
+                </button>
+
+            </div>
+
+            <div class="product-card">
+                <img src="image/ImagensLancamento/LancamentoWrapDoce.jpg" alt="McFlurry" class="product-image">
+                <h2>Wrap Doce, fit ou tradicional.</h2>
+                <p class="product-description">Monte seu wrap doce fit ou tradicional com diversos acompanhamentos.</p>
+                <p class="price">R$ 23,00</p>
+                <button class="order-button" onclick="window.open('https://wa.me/5534997994865', '_blank')">
+                    Peça agora
+                </button>
+
+            </div>
+            <div class="product-card">
+                <img src="image/ImagensLancamento/Lancamentovalsadenutela.jpg" alt="McFlurry" class="product-image">
+                <h2>Recheadinho Valsa de Nutella.</h2>
+                <p class="product-description">Açaí com Nutella, pedaços Sonho de Valsa e Tub-in. </p>
+                <p class="price">R$ 33,00</p>
+                <button class="order-button" onclick="window.open('https://wa.me/5534997994865', '_blank')">
+                    Peça agora
+                </button>
+
+            </div>
+             <div class="product-card">
+                <img src="image/ImagensLancamento/LancamentoWrapCarneFrango.jpg" alt="McFlurry" class="product-image">
+                <h2>Big Wrap Delight. (Frango ou Carne)</h2>
+                <p class="product-description">wrap tostada, carne moída/frango - mussarela , tomate cereja e alface</p>
+                <p class="price">R$ 28,00</p>
+                <button class="order-button" onclick="window.open('https://wa.me/5534997994865', '_blank')">
+                    Peça agora
+                </button>
+              
+
+            </div>
+
+            <div class="product-card">
+                <img src="image/ImagensLancamento/LancamentoMorangoTrufado.jpg" alt="McFlurry" class="product-image">
+                <h2>Recheadinho Morango Trufado.</h2>
+                <p class="product-description">Sorvete de morango com chocolate, creme de avelã e açaí.</p>
+                <p class="price">R$ 28,40</p>
+                <button class="order-button" onclick="window.open('https://wa.me/5534997994865', '_blank')">
+                    Peça agora
+                </button>
+
+            </div>
+
+            <div class="product-card">
+                <img src="image/ImagensLancamento/LancamentoBanoffee.jpg" alt="McFlurry" class="product-image">
+                <h2>Recheadinho Banoffe tradicional ou fit</h2>
+                <p class="product-description">Banoffe tradicional ou fit - consultar opções.</p>
+                <p class="price">R$ 29,90</p>
+                <button class="order-button" onclick="window.open('https://wa.me/5534997994865', '_blank')">
+                    Peça agora
+                </button>
+
+
+
+            </div>
+
+            <div class="product-card">
+                <img src="image/ImagensLancamento/LancamentoTapioca.jpg" alt="McFlurry" class="product-image">
+                <h2>Tapioca Moraninho Delight.</h2>
+                <p class="product-description">Sobremesa com creme ninho delight e morangos.</p>
+                <p class="price">R$ 24,00</p>
+                <button class="order-button" onclick="window.open('https://wa.me/5534997994865', '_blank')">
+                    Peça agora
+                </button>
+
+            </div>
+
+
+            <div class="product-card">
+                <img src="image/ImagensLancamento/LancamentoSanduiche.jpg" alt="McFlurry" class="product-image">
+                <h2>Sanduiche natural integral\fit.</h2>
+                <p class="product-description">frango desfiado, maionese da casa, mussarela, azeitona e uvas passas </p>
+                <p class="price">R$ 22,50</p>
+                <button class="order-button" onclick="window.open('https://wa.me/5534997994865', '_blank')">
+                    Peça agora
+                </button>
+            </div>
+
+
+            <div class="product-card">
+                <img src="image/ImagensLancamento/LancamentoProc.jpg" alt="McFlurry" class="product-image">
+                <h2>Croque-monsieur de peito de peru.</h2>
+                <p class="product-description">Tostex, queijo minas frescal,mostarda Dijon e molho bechamel</p>
+                <p class="price">R$ 29,90</p>
+                <button class="order-button" onclick="window.open('https://wa.me/5534997994865', '_blank')">
+                    Peça agora
+                </button>
+
+            </div>
+
+        </div>
+
+        <button class="nav-button right" onclick="moveCarousel(1)">&#10095;</button>
+    </section>
+
+
+    <div class="cta-container-wrapper">
+     <div class="product-card entrega">
+    <img src="/image/Principal/blogueira.jpg" alt="Entrega ou Retirada" class="product-image">
+    <h2>Peça para entregar ou retire em nosso estabelecimento!</h2>
+    <p class="product-description">Escolha entre entrega rápida ou retirada no local para aproveitar o melhor do nosso cardápio.</p>
+            <button class="order-button"><a href="https://wa.me/5534997994865">Peça Agora</a></button>
+</div>
+
+
+        <!-- Opção 2: Registre-se e Aproveite os Benefícios -->
+        <div class="product-card registro">
+            <img src="/image/Principal/instagram.png" alt="Benefícios" class="product-image">
+            <h2>Siga-nos nas redes sociais e aproveite benefícios e descontos exclusivos.</h2>
+            <p class="product-description">Receba promoções imperdíveis e descontos especiais no seu pedido.</p>
+
+            <!-- Ícones de redes sociais com links para Facebook e Instagram -->
+            <div class="social-icons">
+                <a href="https://www.facebook.com/profile.php?id=61566818826625" target="_blank">
+                    <img src="/image/Icons/facebook.png" alt="Facebook" class="icon">
+                </a>
+                <a href="https://www.instagram.com/acaidelight.ura/" target="_blank">
+                    <img src="/image/instagram-icon.png" alt="Instagram" class="icon"> 
+                </a>
+            </div>
+        </div>
+
+
+        <!-- Opção 3: A Experiência Pensada para Você -->
+        <div class="product-card experiencia">
+            <img src="/image/Icons/porcent.png" alt="Experiência" class="product-image">
+            <h2>Uma experiência completamente planejada para atender às suas necessidades.</h2>
+            <p class="product-description">Tudo o que você aprecia, meticulosamente preparado e entregue com agilidade, assegurando sua total satisfação."</p>
+            
+        </div>
+        </div>
+
+
+
+
+    <!-- Seção de Contato -->
+    <!-- Seção de Contato -->
+    <<!-- Seção de Contato -->
+    <div class="contact-info container-fluid text-center">
+        
+        <h3>Localização</h3>
+        <br/>
+        <p>Visite-nos na Orlando Rodrigues da Cunha, 3920, em Uberaba! <span class="material-icons">location_on</span></p>
+
+
+            <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+       
+
+
+        <h2>Entre em Contato</h2>
+        <p>Converse conosco nas redes sociais ou faça seu pedido online!</p>
+
+        <!-- Redes sociais -->
+        <div class="social-links">
+            <a href="https://www.instagram.com/acaidelight.ura/" target="_blank" class="social-link">
+                <img src="/image/instagram-icon.png" alt="Instagram" class="icon"> Instagram
+            </a>
+            <a href="https://www.ifood.com.br/delivery/uberaba-mg/acai-delight-leblon/e6150d11-3a69-4a53-a919-faceded561f4" target="_blank" class="social-link">
+                <img src="/image/Combos/IFood_logo.svg.png" alt="iFood" class="icon"> iFood
+            </a>
+            <a href="https://wa.me/5534997994865" target="_blank" class="social-link">
+                <img src="/image/whatsapp-icon.png" alt="WhatsApp" class="icon"> WhatsApp
+            </a>
+            <a href="https://www.facebook.com/profile.php?id=61566818826625" target="_blank" class="social-link">
+                <img src="/image/Icons/facebook.png" alt="Facebook" class="icon"> Facebook
+            </a>
+
+        </div>
+
+        <!-- Botões de contato -->
+        <div class="contact-buttons mt-4">
+            <a href="https://www.instagram.com/acaidelight.ura/" target="_blank" class="btn btn-primary">Siga-nos no Instagram</a>
+            <a href="https://wa.me/5534997994865" target="_blank" class="btn btn-success">Fale Conosco no WhatsApp</a>
+        </div>
+    </div>
+
+
+
+
+    <!-- Rodapé -->
+    <div class="footer">
+        <p>© 2025 Açai Delight. Todos os direitos reservados.</p>
+    </div>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/js/lancamento.js"></script>
+
+
+</body>
+
+</html>

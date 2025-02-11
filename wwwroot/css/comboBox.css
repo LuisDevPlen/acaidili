@@ -1,0 +1,76 @@
+﻿
+
+/* Estilo geral do select */
+#adicionais {
+    background-color: #f7f7f7;
+    border: 2px solid #ccc;
+    padding: 4px 40px 4px 12px; /* Diminuindo mais o padding vertical */
+    font-size: 14px; /* Tamanho de fonte reduzido */
+    border-radius: 8px;
+    color: #333;
+    width: 100%;
+    max-width: 400px;
+    box-sizing: border-box;
+    transition: all 0.3s ease;
+    appearance: none; /* Remove a seta padrão do navegador */
+    -webkit-appearance: none; /* Para Safari */
+    -moz-appearance: none; /* Para Firefox */
+    cursor: pointer;
+    overflow: hidden; /* Evita que o texto ultrapasse o limite */
+    line-height: 1.2; /* Ajuste do espaçamento entre linhas para subir mais */
+}
+
+/* Efeito de foco */
+#adicionais:focus {
+    border-color: #5cb85c;
+    outline: none;
+    box-shadow: 0 0 5px rgba(0, 176, 105, 0.5);
+}
+
+/* Estilo das opções */
+#adicionais option {
+    padding: 10px;
+    background-color: #fff;
+    font-size: 13px; /* Tamanho de fonte para as opções reduzido */
+    transition: background-color 0.2s ease;
+}
+
+    /* Efeito de hover nas opções */
+    #adicionais option:hover {
+        background-color: #f1f1f1;
+    }
+
+    /* Texto para a primeira opção, indicando o que selecionar */
+    #adicionais option:first-child {
+        color: #999;
+        font-style: italic;
+    }
+
+    /* Estilo para os itens selecionados */
+    #adicionais option:checked {
+        background-color: #d9f7d9;
+    }
+
+/* Adicionando uma seta personalizada */
+.form-control {
+    position: relative;
+}
+
+    .form-control::after {
+        content: '▼'; /* Seta para baixo */
+        font-size: 18px;
+        color: #888;
+        position: absolute;
+        right: 15px;
+        top: 50%;
+        transform: translateY(-50%);
+        pointer-events: none; /* Para que a seta não interfira na interação */
+    }
+
+/* Melhorando o foco e interatividade */
+#adicionais:hover,
+#adicionais:focus {
+    border-color: #4CAF50;
+}
+
+

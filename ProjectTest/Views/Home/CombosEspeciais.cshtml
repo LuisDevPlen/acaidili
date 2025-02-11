@@ -1,0 +1,573 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="pt-BR">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <title>Lista de Produtos</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/css/Titulos.css">
+    <link rel="stylesheet" href="~/css/Navbar.css">
+    <link rel="stylesheet" href="~/css/espacamento.css">
+    <link rel="stylesheet" href="~/css/pedidoWhats.css">
+ 
+</head>
+<body>
+
+    <div class="container">
+        <img src="/image/whatsapp-icon.png" alt="WhatsApp" class="whatsapp-icon">
+        <span class="whatsapp-text">WhatsApp</span>
+
+        <p class="description">Já escolheu seu pedido? 🍓 Clique no link abaixo e faça seu pedido agora pelo WhatsApp! 📲👇</p>
+        <a href="https://wa.me/5534997994865" class="order-button">FAZER PEDIDO AGORA</a>
+    </div>
+
+    <div class="container mt-5">
+        <h2 id="acai-title" class="text-center mb-4">Combos especiais</h2>
+        <div class="row">
+
+
+            <!-- Card 1 -->
+            <div class="col-md-4">
+                <div class="card mb-4" style="height: 100%;">
+                    <img src="/image/Combos/DespertarNaturall.png" class="card-img-top" alt="Açaí Médio" />
+                    <div class="card-body d-flex flex-column">
+                        <h5 class="card-title">Despertar Natural. (Imagem Ilustrativa)</h5>
+                        <br />
+                        <br />
+                        <p class="card-text"></p>
+                        <p class="card-text"><strong>Preço: R$ 30,00</strong></p>
+                        <div class="mt-auto">
+                            <!-- Botão para abrir a modal -->
+                            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#carneb">Ver Mais</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Modal -->
+            <div class="modal fade" id="carneb" tabindex="-1" aria-labelledby="acaiModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="acaiModalLabel">Despertar Natural. (Imagem Ilustrativa)</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <img src="/image/Combos/DespertarNaturall.png" class="img-fluid mb-3" alt="Açaí Médio" />
+                            <p>
+                                01 Sanduiche natural.
+                                01 Suco de morango 500ml na garrafinha.
+
+                                Benefícios do Combo Despertar Natural:
+                                -Equilíbrio Nutricional: Combinação de proteínas, carboidratos e fibras para um café da manhã completo.
+                                -Energia Sustentada: Fornece energia de forma gradual, mantendo a saciedade por mais tempo.
+                                -Hidratação: O suco de morango com polpa ajuda na hidratação logo pela manhã.
+                                -Praticidade: Perfeito para quem tem pouco tempo.
+                                -Sabores Deliciosos: A mistura de sabores no sanduíche e suco torna a refeição agradável e motivadora para o Dia.
+                            </p>
+                            <p><strong>Preço: R$ 30,00</strong></p>
+
+
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <!-- Card 2 -->
+            <div class="col-md-4">
+                <div class="card mb-4" style="height: 100%;">
+                    <img src="/image/Combos/Harmoniadoalmoço.png" class="card-img-top" alt="Açaí Grande" />
+                    <div class="card-body d-flex flex-column">
+                        <h5 class="card-title">Harmonia do almoço. (Imagem ilustrativa)</h5>
+                        <p class="card-text">.</p>
+                        <p class="card-text"><strong>Preço: R$ 55,00</strong></p>
+                        <div class="mt-auto">
+                            <!-- Botão para abrir a modal -->
+                            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#cogumelo">Ver Mais</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Modal -->
+            <div class="modal fade" id="cogumelo" tabindex="-1" aria-labelledby="acaiModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="acaiModalLabel">Harmonia do almoço. (Imagem ilustrativa)l</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <img src="/image/Combos/Harmoniadoalmoço.png" class="img-fluid mb-3" alt="Açaí Médio" />
+                            <p>
+                                01 Macarrão fusili de cogumelos e castanhas de caju.
+                                01 Suco de caju 500ml.
+
+                                -Sem Glúten, Sem Lactose e Sem Açúcar: Perfeito para quem segue dietas restritivas, oferecendo uma refeição saudável e leve.
+                                -Ingredientes Naturais: Preparado com temperos naturais, garantindo um sabor autêntico e nutritivo, sem aditivos artificiais.
+                                -Equilíbrio Nutricional: Com proteínas vegetais, antioxidantes e fibras, proporciona energia sustentável e bem-estar ao longo do Dia.
+                                -Hidratação e Refresco: O suco de caju com polpa é rico em vitaminas e minerais, trazendo frescor e complementando a refeição.
+                                -Harmonia de Sabores: A combinação das castanhas de caju e o suco de caju trazem uma perfeita harmonia de sabores, tornando o almoço ainda mais especial e saboroso.
+                                -Benefícios de uma Dieta Vegetariana: Rico em alimentos de origem vegetal, o combo promove saúde cardiovascular, melhora a digestão e reduz o risco de doenças crônicas.
+                            </p>
+                            <p><strong>Preço: R$ 55,00</strong></p>
+
+
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <!-- Card 3 -->
+            <div class="col-md-4">
+                <div class="card mb-4" style="height: 100%;">
+                    <img src="/image/Combos/ForcaFoco.png" class="card-img-top" alt="Açaí Grande" />
+                    <div class="card-body d-flex flex-column">
+                        <h5 class="card-title">Força & Foco. (Imagem ilustrativa)</h5>
+                        <p class="card-text">.</p>
+                        <p class="card-text"><strong>Preço: R$ 50,00</strong></p>
+                        <div class="mt-auto">
+                            <!-- Botão para abrir a modal -->
+                            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#CocaModal">Ver Mais</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Modal -->
+            <div class="modal fade" id="CocaModal" tabindex="-1" aria-labelledby="acaiModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="acaiModalLabel">Força & Foco. (Imagem ilustrativa)</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <img src="/image/Combos/ForcaFoco.png" class="img-fluid mb-3" alt="Açaí Médio" />
+                            <p>
+                                01 croque monsieur de peito de peru.
+                                01 Cappuccino Delight de cacau 300ml.
+
+                                Transforme o seu Dia com o Combo Força e Foco! Comece com o sabor irresistível do Croque Monsieur de Peito de Peru – uma combinação leve e cheia de energia. Acompanhado de um Cappuccino Delight de Cacau (300ml), feito com ingredientes naturais que trazem todo o prazer sem lactose, sem glúten e com açúcar apenas dos ingredientes. Perfeito para quem busca força, foco e sabor em cada momento.
+
+                                Ideal para quem não abre mão de uma alimentação saudável e deliciosa, sem abrir mão do prazer!
+                            </p>
+                            <p><strong>Preço: R$ 50,00</strong></p>
+
+
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+                         
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Espaçamento a cada 3 cards -->
+            <div class="row mb-4"></div> <!-- Adiciona um espaço abaixo dos primeiros três cards -->
+
+
+            <!-- Card 4 -->
+            <div class="col-md-4">
+                <div class="card mb-4" style="height: 100%;">
+                    <img src="/image/Combos/Noite.png" class="card-img-top" alt="Açaí Grande" />
+                    <div class="card-body d-flex flex-column">
+                        <h5 class="card-title">Noite Refrescante. (Imagem ilustrativa)</h5>
+                        <p class="card-text">.</p>
+                        <p class="card-text"><strong>Preço: R$ 58,00</strong></p>
+                        <div class="mt-auto">
+                            <!-- Botão para abrir a modal -->
+                            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#gunghi">Ver Mais</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Modal -->
+            <div class="modal fade" id="gunghi" tabindex="-1" aria-labelledby="acaiModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="acaiModalLabel">Noite Refrescante. (Imagem ilustrativa)</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <img src="/image/Combos/Noite.png" class="img-fluid mb-3" alt="Açaí Médio" />
+                            <p>
+                                01 Tapioca Caprese. (Imagem autêntica)
+                                01 smoothie bifásico de morango e maracujá.
+
+                                Aproveite a tranquilidade da noite com o Combo Noite Refrescante! Delicie-se com a saborosa Tapioca Caprese, leve e cheia de frescor, perfeita para uma refeição nutritiva. Acompanhada de um refrescante Smoothie Bifásico de Morango e Maracujá, que combina a doçura do morango e o toque cítrico do maracujá, tudo feito com açúcares naturais e sem lactose e glúten.
+
+                                A escolha perfeita para quem quer relaxar e cuidar da saúde com muito sabor! Ideal para um final de noite delicioso e equilibrado.
+                            </p>
+                            <p><strong>Preço: R$ 58,00</strong></p>
+
+
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <!-- Card 5 -->
+            <div class="col-md-4">
+                <div class="card mb-4" style="height: 100%;">
+                    <img src="/image/Combos/sensac.png" class="card-img-top" alt="Açaí Grande" />
+                    <div class="card-body d-flex flex-column">
+                        <h5 class="card-title">Sensação. (Imagens autênticas)</h5>
+                        <br />
+                        <p class="card-text">.</p>
+                        <p class="card-text"><strong>Preço: R$ 49,00</strong></p>
+                        <div class="mt-auto">
+                            <!-- Botão para abrir a modal -->
+                            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#sensacao">Ver Mais</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Modal -->
+            <div class="modal fade" id="sensacao" tabindex="-1" aria-labelledby="acaiModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="acaiModalLabel">Sensação. (Imagens autênticas)</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <img src="/image/Combos/sensac.png" class="img-fluid mb-3" alt="Açaí Médio" />
+                            <p>
+                                Uma experiência única que combina o melhor do sabor e da cremosidade! Uma explosão irresistível que traz a perfeita harmonia entre crocância e frescor, encantando a cada mordida e colherada. Ideal para qualquer momento do Dia, este combo é acompanhado por uma tapioca sensação(Creme de Avelã) e um açaí batido com banana, criando uma fusão de sabores que vai surpreender seu paladar.
+                            
+                            </p>
+                            <p><strong>Preço: R$ 49,00</strong></p>
+
+
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <!-- Card 6 -->
+            <div class="col-md-4">
+                <div class="card mb-4" style="height: 100%;">
+                    <img src="/image/Combos/SensacaoCombo.png" class="card-img-top" alt="Açaí Grande" />
+                    <div class="card-body d-flex flex-column">
+                        <h5 class="card-title">02 Casadinho + Nutella + Morango 330ml.</h5>
+                        <br />
+                        <br />
+                       
+
+                        <p class="card-text">.</p>
+                        <p class="card-text"><strong>Preço: R$ 60,80</strong></p>
+                        <div class="mt-auto">
+                            <!-- Botão para abrir a modal -->
+                            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#casa">Ver Mais</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Modal -->
+            <div class="modal fade" id="casa" tabindex="-1" aria-labelledby="acaiModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="acaiModalLabel">02 Casadinho + Nutella + Morango 330ml.</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <img src="/image/Combos/SensacaoCombo.png" class="img-fluid mb-3" alt="Açaí Médio" />
+                            <p>
+                                Açaí recheado com creme Ninho, Nutella e morangos fresquinhos. Uma explosão de sabor em cada colherada!
+                            </p>
+                            <p><strong>Preço: R$ 60,80</strong></p>
+
+
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Espaçamento a cada 3 cards -->
+            <div class="row mb-4"></div> <!-- Adiciona um espaço abaixo dos primeiros três cards -->
+
+            <!-- Card 7 -->
+            <div class="col-md-4">
+                <div class="card mb-4" style="height: 100%;">
+                    <img src="/image/Recheadinhos/banoff.jpg" class="card-img-top" alt="Açaí Médio" />
+                    <div class="card-body d-flex flex-column">
+                        <h5 class="card-title">02 Banoffe fit ou tradicional 330ml.</h5>
+                        <p class="card-text"></p>
+                        <p class="card-text"><strong>Preço: R$ 49,80</strong></p>
+                        <div class="mt-auto">
+                            <!-- Botão para abrir a modal -->
+                            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#carne">Ver Mais</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Modal -->
+            <div class="modal fade" id="carne" tabindex="-1" aria-labelledby="acaiModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="acaiModalLabel">02 Banoffe fit ou tradicional 330ml.</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <img src="/image/Recheadinhos/banoff.jpg" class="img-fluid mb-3" alt="Açaí Médio" />
+                            <p>
+                                Opção tradicional: Nosso açaí cremoso vem recheado com a doçura da paçoca, pedaços frescos de banana, um toque irresistível de doce de leite, finalizado com chantilly aveludado e um toque especial de canela para realçar os sabores. Perfeito para adoçar o seu dia! <br />  <br />
+
+                                🌱 Opção Fit: A combinação perfeita de açaí cremoso com pasta de amendoim sabor banoffee, crocantes castanhas e chantilly zero. Uma explosão de sabor irresistível, sem culpa!
+                                ✅ Sem glúten | Sem lactose | Sem açúcar | Rico em proteínas e energia natural
+
+
+                            </p>
+
+                            <p>
+                                Opções:
+                            </p>
+                            <ul>
+                                <li>Sem canela.</li>
+                                <li>Canela</li>
+                              
+
+                            </ul>
+                            <p><strong>Preço: R$ 49,80</strong></p>
+
+
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <!-- Card 8 -->
+            <div class="col-md-4">
+                <div class="card mb-4" style="height: 100%;">
+                    <img src="/image/Combos/SensacaoCombo.png" class="card-img-top" alt="Açaí Grande" />
+                    <div class="card-body d-flex flex-column">
+                        <h5 class="card-title">02 Casadinho + Nutella + Morango 500ml.</h5>
+                        <p class="card-text">.</p>
+                        <p class="card-text"><strong>Preço: R$ 66,90</strong></p>
+                        <div class="mt-auto">
+                            <!-- Botão para abrir a modal -->
+                            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#casa2">Ver Mais</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Modal -->
+            <div class="modal fade" id="casa2" tabindex="-1" aria-labelledby="acaiModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="acaiModalLabel">02 Casadinho + Nutella + Morango 500ml.</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <img src="/image/Combos/SensacaoCombo.png" class="img-fluid mb-3" alt="Açaí Médio" />
+                            <p>
+                                Açaí recheado com creme Ninho, Nutella e morangos fresquinhos. Uma explosão de sabor em cada colherada!
+                            </p>
+                            <p><strong>Preço: R$ 66,90</strong></p>
+
+
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+      
+
+            <!-- Card 9 -->
+            <div class="col-md-4">
+                <div class="card mb-4" style="height: 100%;">
+                    <img src="/image/Recheadinhos/banoff.jpg" class="card-img-top" alt="Açaí Médio" />
+                    <div class="card-body d-flex flex-column">
+                        <h5 class="card-title">02 Banoffe fit ou tradicional 500ml.</h5>
+                        <p class="card-text"></p>
+                        <p class="card-text"><strong>Preço: R$ 55,90</strong></p>
+                        <div class="mt-auto">
+                            <!-- Botão para abrir a modal -->
+                            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#carne2">Ver Mais</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Modal -->
+            <div class="modal fade" id="carne2" tabindex="-1" aria-labelledby="acaiModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="acaiModalLabel">02 Banoffe fit ou tradicional 500ml.</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <img src="/image/Recheadinhos/banoff.jpg" class="img-fluid mb-3" alt="Açaí Médio" />
+                            <p>
+                                Opção tradicional: Nosso açaí cremoso vem recheado com a doçura da paçoca, pedaços frescos de banana, um toque irresistível de doce de leite, finalizado com chantilly aveludado e um toque especial de canela para realçar os sabores. Perfeito para adoçar o seu dia! <br />  <br />
+
+                                🌱 Opção Fit: A combinação perfeita de açaí cremoso com pasta de amendoim sabor banoffee, crocantes castanhas e chantilly zero. Uma explosão de sabor irresistível, sem culpa!
+                                ✅ Sem glúten | Sem lactose | Sem açúcar | Rico em proteínas e energia natural
+
+
+                            </p>
+
+                            <p>
+                                Opções:
+                            </p>
+                            <ul>
+                                <li>Sem canela.</li>
+                                <li>Canela</li>
+
+
+                            </ul>
+                            <p><strong>Preço: R$ 55,90</strong></p>
+
+
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Espaçamento a cada 3 cards -->
+            <div class="row mb-4"></div> <!-- Adiciona um espaço abaixo dos primeiros três cards -->
+
+            <!-- Card 11 -->
+            <div class="col-md-4">
+                <div class="card mb-4" style="height: 100%;">
+                    <img src="/image/Recheadinhos/Morango trufado (1).jpg" class="card-img-top" alt="Açaí Grande" />
+                    <div class="card-body d-flex flex-column">
+                        <h5 class="card-title">02 Casadinho + Nutella + Morango 330ml.</h5>
+                        <p class="card-text">.</p>
+                        <p class="card-text"><strong>Preço: R$ 55,80</strong></p>
+                        <div class="mt-auto">
+                            <!-- Botão para abrir a modal -->
+                            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#morans2">Ver Mais</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Modal -->
+            <div class="modal fade" id="morans2" tabindex="-1" aria-labelledby="acaiModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="acaiModalLabel">02 Casadinho + Nutella + Morango 330ml.</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <img src="/image/Combos/SensacaoCombo.png" class="img-fluid mb-3" alt="Açaí Médio" />
+                            <p>
+                                A perfeita combinação entre a cremosidade do sorvete de morango com chocolate e a intensidade do creme de avelã, mergulhados no nosso irresistível açaí. Uma explosão de sabor que vai conquistar seu paladar a cada colherada!
+                            </p>
+                            <p><strong>Preço: R$ 55,80</strong></p>
+
+
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card 12 -->
+            <div class="col-md-4">
+                <div class="card mb-4" style="height: 100%;">
+                    <img src="/image/Recheadinhos/Morango trufado (1).jpg" class="card-img-top" alt="Açaí Grande" />
+                    <div class="card-body d-flex flex-column">
+                        <h5 class="card-title">02 Casadinho + Nutella + Morango 500ml.</h5>
+                        <p class="card-text">.</p>
+                        <p class="card-text"><strong>Preço: R$ 62,80</strong></p>
+                        <div class="mt-auto">
+                            <!-- Botão para abrir a modal -->
+                            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#morans">Ver Mais</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Modal -->
+            <div class="modal fade" id="morans" tabindex="-1" aria-labelledby="acaiModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="acaiModalLabel">02 Casadinho + Nutella + Morango 500ml.</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <img src="/image/Combos/SensacaoCombo.png" class="img-fluid mb-3" alt="Açaí Médio" />
+                            <p>
+                                A perfeita combinação entre a cremosidade do sorvete de morango com chocolate e a intensidade do creme de avelã, mergulhados no nosso irresistível açaí. Uma explosão de sabor que vai conquistar seu paladar a cada colherada!
+                            </p>
+                            <p><strong>Preço: R$ 62,80</strong></p>
+
+
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+          
+
+
+        </div>
+    </div>
+
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

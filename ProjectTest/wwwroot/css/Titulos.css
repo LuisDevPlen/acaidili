@@ -1,0 +1,40 @@
+/* Estilo para o título Açaí */
+#acai-title {
+    font-family: 'Montserrat', sans-serif; /* Fonte moderna e elegante */
+    font-size: 3rem; /* Tamanho grande para chamar atenção */
+    font-weight: 800; /* Peso de fonte mais forte para maior destaque */
+    background: linear-gradient(to right, #FFFFFF, #F8F9FA); /* Gradiente suave de branco */
+    -webkit-background-clip: text; /* Aplica o gradiente no texto */
+    background-clip: text; /* Garantir compatibilidade em outros navegadores */
+    color: transparent; /* Texto transparente para mostrar o gradiente */
+    text-align: center; /* Alinhamento centralizado */
+    margin: 0 auto 30px auto; /* Centralização com espaçamento abaixo */
+    text-transform: uppercase; /* Letras maiúsculas para sofisticação */
+    letter-spacing: 4px; /* Maior espaçamento entre letras */
+    position: relative; /* Permite adicionar um elemento decorativo */
+    display: block; /* Garante a centralização */
+    padding: 10px 0; /* Pequeno padding para criar espaço ao redor do texto */
+    width: fit-content; /* Faz o título ocupar apenas o espaço necessário */
+}
+
+    /* Efeito de sombra sutil para profundidade */
+    #acai-title::after {
+        content: ''; /* Necessário para o pseudo-elemento */
+        position: absolute;
+        width: 100%;
+        height: 3px;
+        background-color: #1ABC9C; /* Cor vibrante para o efeito */
+        bottom: -8px; /* Distância do texto */
+        left: 0;
+        border-radius: 2px; /* Cantos arredondados para um visual mais suave */
+    }
+
+    /* Efeito hover sofisticado */
+    #acai-title:hover {
+        color: #1ABC9C; /* Cor vibrante ao passar o mouse */
+        transform: translateY(-6px); /* Levanta o título com um efeito sutil */
+        transition: all 0.3s ease-in-out; /* Transição suave e rápida */
+        text-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* Sombra suave para profundidade */
+    }
+
+
