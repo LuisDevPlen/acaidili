@@ -252,7 +252,7 @@ h1 {
 
 /* Estilo do contêiner de introdução */
 .intro-container {
-    background: url('path/to/your-image.jpg') no-repeat center center;
+   
     background-size: cover;
     border-radius: 15px;
     padding: 60px 20px;
