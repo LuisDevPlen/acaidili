@@ -23,4 +23,5 @@
         },
     });
 
+
 document.title = "Açai Delight.ura";

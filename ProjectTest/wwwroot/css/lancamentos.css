@@ -5,6 +5,7 @@
     overflow-x: auto;
     scroll-behavior: smooth;
     -webkit-overflow-scrolling: touch;
+    touch-action: pan-x; /* Permite rolar horizontalmente com o toque */
 }
 
 .product-carousel {
@@ -72,7 +73,7 @@
     border-radius: 50%;
     font-size: 2rem;
     transform: translateY(-50%);
-    display: none; /* Oculta botões de navegação em mobile */
+    display: block; /* Exibe os botões de navegação em todas as telas */
 }
 
 .left {
@@ -86,9 +87,5 @@
 @media (min-width: 768px) {
     .product-carousel {
         overflow: hidden;
-    }
-
-    .nav-button {
-        display: block; /* Mostra os botões de navegação apenas em telas maiores */
     }
 }

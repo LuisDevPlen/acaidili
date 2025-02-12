@@ -247,6 +247,27 @@
         <button class="nav-button right" onclick="moveCarousel(1)">&#10095;</button>
     </section>
 
+    <script>
+
+        document.querySelector('.left').addEventListener('click', function () {
+            document.querySelector('.product-carousel').scrollBy({
+                left: -300, // Mover o carrossel para a esquerda
+                behavior: 'smooth'
+            });
+        });
+
+        document.querySelector('.right').addEventListener('click', function () {
+            document.querySelector('.product-carousel').scrollBy({
+                left: 300, // Mover o carrossel para a direita
+                behavior: 'smooth'
+            });
+        });
+
+        </script>
+
+
+
+
 
     <div class="cta-container-wrapper">
      <div class="product-card entrega">
@@ -344,4 +365,3 @@
 </body>
 
 </html>
-FG
