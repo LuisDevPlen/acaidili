@@ -66,7 +66,7 @@ namespace ProjectTest.Controllers
 
         public IActionResult Recheadinhos()
         {
-            ViewData["Title"] = "Recheadinhos";
+            ViewData["Title"] = "Açaí-Recheadinhos";
             return View();
         }
 
@@ -102,8 +102,18 @@ namespace ProjectTest.Controllers
 
         public IActionResult Casadinho()
         {
-            ViewData["Title"] = "Casadinho";
+            ViewData["Title"] = "Açai-Casadinho";
             return View();
         }
+
+
+        public IActionResult MilkShakeAcai()
+        {
+            ViewData["Title"] = "Açai-MilkShake";
+            return View();
+        }
+
+
+       
     }
 }
