@@ -1,12 +1,12 @@
 ﻿<!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>@ViewData["Title"] </title>
+    <title>@ViewData["Title"]</title>
 
-
-    <!-- Bootstrap CSS (apenas a versão mais recente) -->
+    <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
 
     <!-- Font Awesome para ícones -->
@@ -19,88 +19,114 @@
     <!-- CSS específico para a Navbar -->
     <link rel="stylesheet" href="~/css/Navbar.css">
 
+    <style>
+        /* Estilos para a sidebar */
+        .sidebar {
+            position: fixed;
+            top: 0;
+            left: -250px;
+            width: 250px;
+            height: 100%;
+            background-color: #f8f9fa;
+            box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+            transition: left 0.3s ease;
+            z-index: 1040;
+        }
+
+            .sidebar.active {
+                left: 0;
+            }
+
+            .sidebar .nav-link {
+                color: #333;
+                padding: 10px 20px;
+            }
+
+                .sidebar .nav-link:hover {
+                    background-color: #e2e6ea;
+                }
+
+        .menu-toggle {
+            position: fixed;
+            top: 10px;
+            left: 10px;
+            background-color: transparent;
+            border: none;
+            z-index: 1050;
+        }
+
+        .overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.5);
+            opacity: 0;
+            visibility: hidden;
+            transition: opacity 0.3s ease, visibility 0.3s ease;
+            z-index: 1030;
+        }
+
+            .overlay.active {
+                opacity: 1;
+                visibility: visible;
+            }
+
+        .logo-img {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            object-fit: cover;
+        }
+    </style>
 </head>
+
 <body>
 
+    <!-- Botão de Menu -->
+    <button class="menu-toggle">
+        <i class="fas fa-bars fa-2x"></i>
+    </button>
 
-
-    <header>
-        <!-- Navbar responsiva -->
-        <nav class="navbar navbar-expand-lg navbar-light bg-light shadow-sm">
-            <div class="container-fluid">
-                <a class="navbar-brand d-flex align-items-center" href="#">
-                    <img src="/image/capa/LOGO E SLOGAN (3).jpg" alt="Açai Delight" class="logo-img me-2">
-                    <span class="fw-bold text-success">Açai Delight</span>
+    <!-- Sidebar -->
+    <div class="sidebar">
+        <div class="text-center py-3">
+            <img src="/image/capa/LOGO E SLOGAN (3).jpg" alt="Açai Delight" class="logo-img mb-2">
+            <h5 class="text-success fw-bold">Açai Delight</h5>
+        </div>
+        <ul class="nav flex-column">
+            <li class="nav-item">
+                <a class="nav-link" href="@Url.Action("Index", "Home")">
+                    <i class="fas fa-home me-2"></i>Voltar ao menu inicial
                 </a>
+            </li>
+        
+            <li class="nav flex-column">
+                <a class="nav-link" href="@Url.Action("Catalogo", "Home")">
+                    <i class="fas fa-utensils me-2"></i>Cardápio
+                </a>
+            </li>
 
-                <style>
-                    .logo-img {
-                        width: 50px;
-                        height: 50px;
-                        border-radius: 50%;
-                        object-fit: cover;
-                    }
-                </style>
+        </ul>
+        <hr>
+        <div class="px-3">
+            <label for="horarioSelect" class="me-2 mb-0 text-muted">Horários de funcionamento</label>
+            <select class="form-select mb-3" id="horarioSelect" aria-label="Horários de funcionamento">
+                <option value="" disabled selected>Horário de funcionamento</option>
+                <option value="" disabled>Segunda - feira: 14:00 às 2:00</option>
+                <option value="" disabled>Terça - feira: 14:00 às 2:00</option>
+                <option value="" disabled>Quarta - feira: 14:00 às 2:00</option>
+                <option value="" disabled>Quinta - feira: 14:00 às 2:00</option>
+                <option value="" disabled>Sexta - feira: 14:00 às 2:00</option>
+                <option value="" disabled>Sábado: 14:00 às 2:00</option>
+                <option value="" disabled>Domingo: 14:00 às 2:00</option>
+            </select>
+        </div>
+    </div>
 
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-                        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-
-                <div class="collapse navbar-collapse" id="navbarNav">
-                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                        @if (!string.Equals(ViewContext.RouteData.Values["action"]?.ToString(), "Index", StringComparison.OrdinalIgnoreCase))
-                        {
-                            <li class="nav-item">
-                                <a class="nav-link text-dark fw-medium" href="@Url.Action("Index", "Home")">Voltar ao menu inicial</a>
-                            </li>
-                        }
-                    </ul>
-
-                    <div class="d-flex align-items-center">
-                        <label for="horarioSelect" class="me-2 mb-0 text-muted">Horários de funcionamento</label>
-                        <select class="form-select" id="horarioSelect" aria-label="Horários de funcionamento" style="max-width: 250px; flex-shrink: 0;">
-                            <option value="" disabled selected>Horário de funcionamento</option>
-                            <option value="" disabled>Segunda - feira: 14:00 às 2:00</option>
-                            <option value="" disabled>Terça - feira: 14:00 às 2:00</option>
-                            <option value="" disabled>Quarta - feira: 14:00 às 2:00</option>
-                            <option value="" disabled>Quinta - feira: 14:00 às 2:00</option>
-                            <option value="" disabled>Sexta - feira: 14:00 às 2:00</option>
-                            <option value="" disabled>Sábado: 14:00 às 2:00</option>
-                            <option value="" disabled>Domingo: 14:00 às 2:00</option>
-                        </select>
-                    </div>
-                </div>
-            </div>
-        </nav>
-    </header>
-
-    <script>
-        // Fecha o menu sanduíche ao clicar em um item do menu
-        document.addEventListener("DOMContentLoaded", function () {
-            const navLinks = document.querySelectorAll(".nav-link");
-            const navbarToggler = document.querySelector(".navbar-toggler");
-            const navbarCollapse = document.querySelector(".navbar-collapse");
-
-            navLinks.forEach(link => {
-                link.addEventListener("click", () => {
-                    if (window.innerWidth < 992) {
-                        navbarToggler.click();
-                    }
-                });
-            });
-
-            // Fecha o menu ao clicar fora dele
-            document.addEventListener("click", function (event) {
-                if (!navbarCollapse.contains(event.target) && !navbarToggler.contains(event.target)) {
-                    navbarCollapse.classList.remove("show");
-                }
-            });
-        });
-    </script>
-
-
-
+    <!-- Overlay para escurecer o fundo -->
+    <div class="overlay"></div>
 
     <!-- Conteúdo Principal -->
     <div class="container">
@@ -109,15 +135,31 @@
         </main>
     </div>
 
+
+
+
     <!-- Scripts -->
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
 
-    <script src="~/js/site.js" asp-append-version="true"></script>
+    <script>
+        // Controla a abertura/fechamento da sidebar
+        const menuToggle = document.querySelector('.menu-toggle');
+        const sidebar = document.querySelector('.sidebar');
+        const overlay = document.querySelector('.overlay');
 
+        menuToggle.addEventListener('click', () => {
+            sidebar.classList.toggle('active');
+            overlay.classList.toggle('active');
+        });
 
-    
+        overlay.addEventListener('click', () => {
+            sidebar.classList.remove('active');
+            overlay.classList.remove('active');
+        });
+    </script>
 
     @await RenderSectionAsync("Scripts", required: false)
 </body>
+
 </html>

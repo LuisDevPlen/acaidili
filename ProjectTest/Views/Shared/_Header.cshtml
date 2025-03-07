@@ -1,0 +1,146 @@
+﻿
+<link rel="stylesheet" href="~/css/Header.css">
+<link rel="stylesheet" href="~/css/site.css">
+<link rel="stylesheet" href="~/css/Cardapio.css>
+
+<header>
+    <nav class="navbar">
+        <div class="swiper-container navbar-nav">
+            <div class="swiper-wrapper">
+                <div class="nav-item swiper-slide">
+                    <a class="nav-link" asp-controller="Home" asp-action="Acai">
+                        <div class="menu-item" style="background-image: url('/image/imagensAcai/acai1kg.jpg');">
+                            Monte seu Açaí
+                        </div>
+                    </a>
+                </div>
+                <div class="nav-item swiper-slide">
+                    <a class="nav-link" asp-controller="Home" asp-action="Acaibatido">
+                        <div class="menu-item" style="background-image: url('/image/Combos/acaiBatido.png');">
+                            Açaí Batido
+                        </div>
+                    </a>
+                </div>
+                <div class="nav-item swiper-slide">
+                    <a class="nav-link" asp-controller="Home" asp-action="Casadinho">
+                        <div class="menu-item" style="background-image: url('/image/Casadinho/casadinhoCremeNinho.png');">
+                            Açaí/Casadinho
+                        </div>
+                    </a>
+                </div>
+                <div class="nav-item swiper-slide">
+                    <a class="nav-link" asp-controller="Home" asp-action="MilkShakeAcai">
+                        <div class="menu-item" style="background-image: url('/image/Combos/MilkShakeEnergy Shake.jpg');">
+                            Açaí/MilkShake
+                        </div>
+                    </a>
+                </div>
+                <div class="nav-item swiper-slide">
+                    <a class="nav-link" asp-controller="Home" asp-action="Recheadinhos">
+                        <div class="menu-item" style="background-image: url('/image/Recheadinhos/Morango trufado (1).jpg');">
+                            Açaí/Recheadinhos
+                        </div>
+                    </a>
+                </div>
+                <div class="nav-item swiper-slide">
+                    <a class="nav-link" asp-controller="Home" asp-action="Bebidas">
+                        <div class="menu-item" style="background-image: url('/image/Bebidas/cocalatanormal.png');">
+                            Bebidas
+                        </div>
+                    </a>
+                </div>
+                <div class="nav-item swiper-slide">
+                    <a class="nav-link" asp-controller="Home" asp-action="CombosEspeciais">
+                        <div class="menu-item" style="background-image: url('/image/Combos/Noite.png');">
+                            Combos Especiais
+                        </div>
+                    </a>
+                </div>
+                <div class="nav-item swiper-slide">
+                    <a class="nav-link" asp-controller="Home" asp-action="LanchesDelight">
+                        <div class="menu-item" style="background-image: url('/image/Lanches/Croquemonsieur.png');">
+                            Lanches Delight
+                        </div>
+                    </a>
+                </div>
+                <div class="nav-item swiper-slide">
+                    <a class="nav-link" asp-controller="Home" asp-action="Massas">
+                        <div class="menu-item" style="background-image: url('/image/Massas/attmac.png');">
+                            Massas
+                        </div>
+                    </a>
+                </div>
+                <div class="nav-item swiper-slide">
+                    <a class="nav-link" asp-controller="Home" asp-action="Omeletes">
+                        <div class="menu-item" style="background-image: url('/image/Omeletes/omeleteCapresseAtt.png');">
+                            Omeletes
+                        </div>
+                    </a>
+                </div>
+                <div class="nav-item swiper-slide">
+                    <a class="nav-link" asp-controller="Home" asp-action="Panquecas">
+                        <div class="menu-item" style="background-image: url('/image/Panquecas/PanquecaCarne.png');">
+                            Panquecas
+                        </div>
+                    </a>
+                </div>
+                <div class="nav-item swiper-slide">
+                    <a class="nav-link" asp-controller="Home" asp-action="Smothies">
+                        <div class="menu-item" style="background-image: url('/image/Smo/smoChocoWhey.jpg');">
+                            Smothies
+                        </div>
+                    </a>
+                </div>
+                <div class="nav-item swiper-slide">
+                    <a class="nav-link" asp-controller="Home" asp-action="Tapiocas">
+                        <div class="menu-item" style="background-image: url('/image/Tapioca/Caprese.jpg');">
+                            Tapiocas
+                        </div>
+                    </a>
+                </div>
+                <div class="nav-item swiper-slide">
+                    <a class="nav-link" asp-controller="Home" asp-action="TapiocasDoces">
+                        <div class="menu-item" style="background-image: url('/image/Tapioca/sensacao.png');">
+                            Tapiocas Doces
+                        </div>
+                    </a>
+                </div>
+                <div class="nav-item swiper-slide">
+                    <a class="nav-link" asp-controller="Home" asp-action="Wrap">
+                        <div class="menu-item" style="background-image: url('/image/Wrap/wrap.png');">
+                            Wrap
+                        </div>
+                    </a>
+                </div>
+                <div class="nav-item swiper-slide">
+                    <a class="nav-link" asp-controller="Home" asp-action="WrapDoce">
+                        <div class="menu-item" style="background-image: url('/image/Wrap/wrapdoce.jpg');">
+                            Wrap Doce
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="product-title">
+                <p>Arraste para o lado para visualizar os tópicos dos produtos</p>
+            </div>
+        </div>
+    </nav>
+</header>
+
+
+<script>
+
+    document.addEventListener("DOMContentLoaded", function () {
+        // Seleciona o swiper-container
+        const swiperContainer = document.querySelector('.swiper-container');
+
+        // Verifica se o swiper-container está maior que a tela para ativar a rolagem
+        if (swiperContainer.scrollWidth > swiperContainer.clientWidth) {
+            swiperContainer.style.overflowX = 'auto'; // Garante rolagem horizontal
+        }
+    });
+
+</script>
+
+
+

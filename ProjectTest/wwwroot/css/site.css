@@ -177,12 +177,7 @@ body {
     padding: 0;
 }
 
-header {
-    background-color: #f93;
-    color: white;
-    text-align: center;
-    padding: 20px;
-}
+
 
 h1 {
     font-size: 2.5rem;
@@ -619,4 +614,6 @@ body {
             transform: scale(1.1); /* Aumenta mais o item ao passar o mouse em telas menores */
         }
 }
+
+
 

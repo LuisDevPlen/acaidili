@@ -1,0 +1,61 @@
+﻿@using Microsoft.AspNetCore.Mvc
+
+@{
+    ViewData["Title"] = "Cardápio";
+}
+
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewData["Title"]</title>
+
+    <link rel="stylesheet" href="/css/Cardapio.css">
+    <link rel="stylesheet" href="/css/Titulos.css">
+</head>
+
+<body>
+
+    <header>
+        <h2 id="acai-title" class="text-center mb-4">Cardápio</h2>
+
+        <nav class="navbar">
+            <div class="nav-container">
+                <div class="nav-grid">
+                    @foreach (var item in new[] {
+                    new { Action = "Acai", Text = "Monte seu Açaí", Image = "imagensAcai/acai1kg.jpg" },
+                    new { Action = "Acaibatido", Text = "Açaí Batido", Image = "Combos/acaiBatido.png" },
+                    new { Action = "Casadinho", Text = "Casadinhos", Image = "Casadinho/casadinhoCremeNinho.png" },
+                    new { Action = "MilkShakeAcai", Text = "MilkShake", Image = "Combos/MilkShakeEnergy Shake.jpg" },
+                    new { Action = "Recheadinhos", Text = "Recheadinhos", Image = "Recheadinhos/Morango trufado (1).jpg" },
+                    new { Action = "Bebidas", Text = "Bebidas", Image = "Bebidas/cocalatanormal.png" },
+                    new { Action = "CombosEspeciais", Text = "Combos", Image = "Combos/Noite.png" },
+                    new { Action = "LanchesDelight", Text = "Lanches", Image = "Lanches/Croquemonsieur.png" },
+                    new { Action = "Massas", Text = "Massas", Image = "Massas/attmac.png" },
+                    new { Action = "Omeletes", Text = "Omeletes", Image = "Omeletes/omeleteCapresseAtt.png" },
+                    new { Action = "Panquecas", Text = "Panquecas", Image = "Panquecas/PanquecaCarne.png" },
+                    new { Action = "Smothies", Text = "Smoothies", Image = "Smo/smoChocoWhey.jpg" },
+                    new { Action = "Tapiocas", Text = "Tapiocas", Image = "Tapioca/Caprese.jpg" },
+                    new { Action = "TapiocasDoces", Text = "Tapiocas Doces", Image = "Tapioca/sensacao.png" },
+                    new { Action = "Wrap", Text = "Wrap", Image = "Wrap/wrap.png" },
+                    new { Action = "WrapDoce", Text = "Wrap Doce", Image = "Wrap/wrapdoce.jpg" }
+                            })
+                    {
+                        <div class="nav-item">
+                            <a class="nav-link" asp-controller="Home" asp-action="@item.Action">
+                                <div class="nav-item-content">
+                                    <img src="@Url.Content($"~/image/{item.Image}")" alt="@item.Text" class="nav-item-img" loading="lazy" />
+                                    <span>@item.Text</span>
+                                </div>
+                            </a>
+                        </div>
+                    }
+                </div>
+            </div>
+        </nav>
+    </header>
+
+</body>
+</html>

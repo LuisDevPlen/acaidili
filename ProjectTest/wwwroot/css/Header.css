@@ -1,0 +1,79 @@
+﻿/* Garantir que o swiper-container ocupe todo o espaço e tenha rolagem */
+.swiper-container {
+    width: 100%; /* A largura ocupa 100% */
+    overflow-x: auto; /* Habilita a rolagem horizontal */
+    -webkit-overflow-scrolling: touch; /* Suaviza o scroll no iOS */
+    display: flex; /* Usando flexbox para manter os itens em linha */
+    gap: 20px; /* Espaçamento entre os itens */
+    box-sizing: border-box; /* Inclui o padding e border na largura total */
+}
+
+/* Swiper-wrapper, mantendo os itens alinhados */
+.swiper-wrapper {
+    display: flex; /* Flexbox para os itens ficarem alinhados horizontalmente */
+    gap: 20px; /* Espaçamento entre os itens */
+}
+
+/* Itens da navegação não devem encolher ou esticar */
+.nav-item {
+    flex: 0 0 auto; /* Impede que os itens encolham ou se estiquem */
+}
+
+/* Estilo do item do menu */
+.menu-item {
+    min-width: 150px; /* Tamanho mínimo para os itens */
+    height: 150px;
+    background-size: cover;
+    background-position: center;
+    border-radius: 12px;
+    display: flex;
+    flex-direction: column; /* Faz com que o título fique abaixo da imagem */
+    justify-content: flex-end; /* Coloca o conteúdo no fundo */
+    align-items: center; /* Centraliza o conteúdo horizontalmente */
+    color: white;
+    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.7);
+    padding: 10px;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+/* Estilo do título do produto */
+.product-title {
+    margin-top: 10px; /* Ajuste o espaçamento */
+    text-align: center;
+    font-size: 1.2em; /* Ajuste o tamanho do título */
+    font-weight: bold; /* Coloca o título em negrito */
+}
+
+/* Efeito de hover */
+.menu-item:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+/* Estilo do link de navegação */
+.nav-link {
+    text-decoration: none;
+}
+
+/* Responsividade para garantir que a rolagem horizontal também funcione em telas maiores */
+@media (min-width: 768px) {
+    .swiper-container {
+        overflow-x: auto;
+        -webkit-overflow-scrolling: touch;
+        flex-wrap: nowrap; /* Impede que os itens se movam para a linha seguinte */
+    }
+
+    .swiper-wrapper {
+        display: flex; /* Flexbox para manter a rolagem horizontal */
+    }
+}
+
+body {
+    background-image: url('/image/capa/capa.jpg');
+    background-size: cover; /* Faz a imagem cobrir todo o fundo da página */
+    background-position: center; /* Centraliza a imagem */
+    background-repeat: no-repeat; /* Impede a repetição da imagem */
+    height: 100%; /* Altere de 100vh para 100% para garantir que a altura do corpo seja total */
+    background-attachment: fixed; /* Fixação do fundo para que não se mova com o scroll */
+    margin: 0; /* Remove margens padrão do body */
+}
