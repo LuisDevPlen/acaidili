@@ -58,8 +58,14 @@
                     <div class="card-body d-flex flex-column">
                         <h5 class="card-title">Casadinho com creme Ninho 500ml.</h5>
                         <p class="card-text"></p>
-                        <p class="card-text"><strong>Preço: R$ 18,40</strong></p>
+                        <p class="card-text"><strong>Preço: R$ <span id="precoBase">18,40</span></strong></p>
                         <div class="mt-auto">
+                            <select id="adicionais" name="adicionais" class="form-control">
+                                <option value="0" selected>Selecione o creme:</option>
+                                <option value="4.00">Creme ninho tradicional R$ 4,00</option>
+                                <option value="5.00">Creme ninho fit R$ 5,00 (zero)</option>
+                            </select>
+                            
                             <!-- Botão para abrir a modal -->
                             <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#acaiModal500">Ver Mais</button>
                         </div>
@@ -106,8 +112,14 @@
                     <div class="card-body d-flex flex-column">
                         <h5 class="card-title">Casadinho com creme Ninho 1kg.</h5>
                         <p class="card-text"></p>
-                        <p class="card-text"><strong>Preço: R$ 44,80</strong></p>
+                        <p class="card-text"><strong>Preço: R$ <span class="precoBase">33,90</span></strong></p>
                         <div class="mt-auto">
+                            <select name="adicionais" class="form-control adicionais">
+                                <option value="0" selected>Selecione o creme:</option>
+                                <option value="4.00">Creme ninho tradicional R$ 8,00</option>
+                                <option value="5.00">Creme ninho fit R$ 10,00 (zero)</option>
+                            </select>
+                            <!-- Botão para
                             <!-- Botão para abrir a modal -->
                             <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#acaiModal1kg">Ver Mais</button>
                         </div>
@@ -317,12 +329,26 @@
 
 
 
+            <script>
+                document.getElementById("adicionais").addEventListener("change", function () {
+                    let precoBase = 18.40;
+                    let adicional = parseFloat(this.value) || 0;
+                    let precoFinal = precoBase + adicional;
+                    document.getElementById("precoBase").textContent = precoFinal.toFixed(2).replace(".", ",");
+                });
+            </script>
 
 
-          
+            <script>
+                document.querySelector(".adicionais").addEventListener("change", function () {
+                    let precoBase = 33.90;
+                    let adicional = (parseFloat(this.value) || 0) * 2; // Dobra o valor do adicional
+                    let precoFinal = precoBase + adicional;
+                    document.querySelector(".precoBase").textContent = precoFinal.toFixed(2).replace(".", ",");
+                });
+            </script>
 
 
-          
 
 
             <section id="adicionais">

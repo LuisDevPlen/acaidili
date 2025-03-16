@@ -143,12 +143,18 @@ namespace ProjectTest.Controllers
         new AdicionalModel { Nome = "Farinha Láctea", Preco = 2.50M },
         new AdicionalModel { Nome = "Granola, quinoa com castanha sem glúten", Preco = 4.50M },
         new AdicionalModel { Nome = "Granola tradicional", Preco = 3.00M },
+        new AdicionalModel { Nome = "Paçoca", Preco = 3.00M },
         new AdicionalModel { Nome = "Leite Condensado", Preco = 2.50M },
         new AdicionalModel { Nome = "Leite em pó - ninho", Preco = 3.00M },
         new AdicionalModel { Nome = "Leite em pó zero - ninho", Preco = 4.50M },
         new AdicionalModel { Nome = "Mel", Preco = 2.20M },
+        new AdicionalModel { Nome = "Ouro branco(03un)", Preco = 5.50M },
+        new AdicionalModel { Nome = "Sonho de valsa(03un)", Preco = 5.50M },
+        new AdicionalModel { Nome = "Pessego em calda", Preco = 4.50M },
         new AdicionalModel { Nome = "Morango", Preco = 3.50M },
-        new AdicionalModel { Nome = "Nutella", Preco = 7.00M }
+        new AdicionalModel { Nome = "Nutella", Preco = 7.00M },
+        new AdicionalModel { Nome = "Whey Protein de chocolate. (Growth)", Preco = 8.50M },
+        new AdicionalModel { Nome = "Whey Protein de Morango. (Growth)", Preco = 8.50M }
     };
 
             return View(adicionais);
